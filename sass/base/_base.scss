@@ -14,7 +14,7 @@ body {
     line-height: normal;
 }
 
-@include headings() {
+h1, h2 {
     font-family: $font1;
 }
 
