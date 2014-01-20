@@ -1,29 +1,33 @@
-/*
+/* ===========================
  * JASONCO.DE - SASS Framework
  * Inspired by SASS-SMACSS http://jonathanpath.com/sass+smacss/
  * Author: Jason Cole - @TehVeil - http://jasonco.de
  * Date: 1/20/14
- *
+ * ===========================
  */
 
-/* Compass */
 @import "compass";
+
 /* Tools */
 @import "tools/mixins";
 @import "tools/functions";
 @import "tools/site-settings";
 @import "tools/helpers";
+
 /* Base */
 @import "base/normalize";
 @import "base/base";
+
 /* Fonts */
 @import "fonts/exo-2";
+
 /* Layout */
 @import "layout/header";
 @import "layout/footer";
 @import "layout/nav";
 @import "layout/main";
 @import "layout/grid";
+
 /* Modules */
 @import "modules/animations";
 @import "modules/btn";

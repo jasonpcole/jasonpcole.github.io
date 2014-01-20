@@ -1,11 +1,10 @@
-/*
+/* ===========================
  * JASONCO.DE - SASS Framework
  * Inspired by SASS-SMACSS http://jonathanpath.com/sass+smacss/
  * Author: Jason Cole - @TehVeil - http://jasonco.de
  * Date: 1/20/14
- *
+ * ===========================
  */
-/* Compass */
 /* Tools */
 /* =======================
    TOOLS | MIXINS
@@ -34,14 +33,16 @@
   border: 0;
   overflow: hidden;
   /* IE 6/7 fallback */
-  *text-indent: -9999px; }
+  *text-indent: -9999px;
+}
 
 /* line 17, ../sass/tools/_helpers.scss */
 .ir:before {
   content: "";
   display: block;
   width: 0;
-  height: 150%; }
+  height: 150%;
+}
 
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
@@ -49,7 +50,8 @@
 /* line 28, ../sass/tools/_helpers.scss */
 .hidden {
   display: none !important;
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
@@ -63,7 +65,8 @@
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px; }
+  width: 1px;
+}
 
 /*
  * Extends the .visuallyhidden class to allow the element to be focusable
@@ -77,14 +80,16 @@
   margin: 0;
   overflow: visible;
   position: static;
-  width: auto; }
+  width: auto;
+}
 
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
 /* line 67, ../sass/tools/_helpers.scss */
 .invisible {
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 /*
  * Clearfix: contain floats
@@ -103,11 +108,13 @@
   content: " ";
   /* 1 */
   display: table;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* line 89, ../sass/tools/_helpers.scss */
 .clearfix:after {
-  clear: both; }
+  clear: both;
+}
 
 /*
  * For IE 6/7 only
@@ -115,7 +122,8 @@
  */
 /* line 98, ../sass/tools/_helpers.scss */
 .clearfix {
-  *zoom: 1; }
+  *zoom: 1;
+}
 
 /* =Layout
 ------------------- */
@@ -126,27 +134,32 @@
 /* line 117, ../sass/tools/_helpers.scss */
 .alignleft {
   display: inline;
-  float: left; }
+  float: left;
+}
 
 /* line 121, ../sass/tools/_helpers.scss */
 .alignright {
   display: inline;
-  float: right; }
+  float: right;
+}
 
 /* line 125, ../sass/tools/_helpers.scss */
 .aligncenter {
   clear: both;
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 /* line 131, ../sass/tools/_helpers.scss */
 .txtleft {
-  text-align: left; }
+  text-align: left;
+}
 
 /* line 134, ../sass/tools/_helpers.scss */
 .txtright {
-  text-align: right; }
+  text-align: right;
+}
 
 /* Base */
 /**
@@ -173,7 +186,8 @@ main,
 nav,
 section,
 summary {
-  display: block; }
+  display: block;
+}
 
 /**
  * Correct `inline-block` display not defined in IE 8/9.
@@ -182,7 +196,8 @@ summary {
 audio,
 canvas,
 video {
-  display: inline-block; }
+  display: inline-block;
+}
 
 /**
  * Prevent modern browsers from displaying `audio` without controls.
@@ -191,7 +206,8 @@ video {
 /* line 46, ../sass/base/_normalize.scss */
 audio:not([controls]) {
   display: none;
-  height: 0; }
+  height: 0;
+}
 
 /**
  * Address `[hidden]` styling not present in IE 8/9.
@@ -200,7 +216,8 @@ audio:not([controls]) {
 /* line 57, ../sass/base/_normalize.scss */
 [hidden],
 template {
-  display: none; }
+  display: none;
+}
 
 /* ==========================================================================
    Base
@@ -217,14 +234,16 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove default margin.
  */
 /* line 81, ../sass/base/_normalize.scss */
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 /* ==========================================================================
    Links
@@ -234,14 +253,16 @@ body {
  */
 /* line 93, ../sass/base/_normalize.scss */
 a {
-  background: transparent; }
+  background: transparent;
+}
 
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 /* line 101, ../sass/base/_normalize.scss */
 a:focus {
-  outline: thin dotted; }
+  outline: thin dotted;
+}
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
@@ -249,7 +270,8 @@ a:focus {
 /* line 110, ../sass/base/_normalize.scss */
 a:active,
 a:hover {
-  outline: 0; }
+  outline: 0;
+}
 
 /* ==========================================================================
    Typography
@@ -261,14 +283,16 @@ a:hover {
 /* line 123, ../sass/base/_normalize.scss */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.67em 0;
+}
 
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
 /* line 132, ../sass/base/_normalize.scss */
 abbr[title] {
-  border-bottom: 1px dotted; }
+  border-bottom: 1px dotted;
+}
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
@@ -276,14 +300,16 @@ abbr[title] {
 /* line 141, ../sass/base/_normalize.scss */
 b,
 strong {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
 /* line 149, ../sass/base/_normalize.scss */
 dfn {
-  font-style: italic; }
+  font-style: italic;
+}
 
 /**
  * Address differences between Firefox and other browsers.
@@ -292,7 +318,8 @@ dfn {
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  height: 0; }
+  height: 0;
+}
 
 /**
  * Address styling not present in IE 8/9.
@@ -300,7 +327,8 @@ hr {
 /* line 167, ../sass/base/_normalize.scss */
 mark {
   background: #ff0;
-  color: #000; }
+  color: #000;
+}
 
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
@@ -311,28 +339,32 @@ kbd,
 pre,
 samp {
   font-family: monospace, serif;
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
 /* line 188, ../sass/base/_normalize.scss */
 pre {
-  white-space: pre-wrap; }
+  white-space: pre-wrap;
+}
 
 /**
  * Set consistent quote types.
  */
 /* line 196, ../sass/base/_normalize.scss */
 q {
-  quotes: "\201C" "\201D" "\2018" "\2019"; }
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
 
 /**
  * Address inconsistent and variable font size in all browsers.
  */
 /* line 204, ../sass/base/_normalize.scss */
 small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
@@ -343,15 +375,18 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* line 220, ../sass/base/_normalize.scss */
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
 /* line 224, ../sass/base/_normalize.scss */
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 /* ==========================================================================
    Embedded content
@@ -361,14 +396,16 @@ sub {
  */
 /* line 236, ../sass/base/_normalize.scss */
 img {
-  border: 0; }
+  border: 0;
+}
 
 /**
  * Correct overflow displayed oddly in IE 9.
  */
 /* line 244, ../sass/base/_normalize.scss */
 svg:not(:root) {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /* ==========================================================================
    Figures
@@ -378,7 +415,8 @@ svg:not(:root) {
  */
 /* line 256, ../sass/base/_normalize.scss */
 figure {
-  margin: 0; }
+  margin: 0;
+}
 
 /* ==========================================================================
    Forms
@@ -390,7 +428,8 @@ figure {
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35em 0.625em 0.75em;
+}
 
 /**
  * 1. Correct `color` not being inherited in IE 8/9.
@@ -401,7 +440,8 @@ legend {
   border: 0;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * 1. Correct font family not being inherited in all browsers.
@@ -418,7 +458,8 @@ textarea {
   font-size: 100%;
   /* 2 */
   margin: 0;
-  /* 3 */ }
+  /* 3 */
+}
 
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
@@ -427,7 +468,8 @@ textarea {
 /* line 305, ../sass/base/_normalize.scss */
 button,
 input {
-  line-height: normal; }
+  line-height: normal;
+}
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -438,7 +480,8 @@ input {
 /* line 317, ../sass/base/_normalize.scss */
 button,
 select {
-  text-transform: none; }
+  text-transform: none;
+}
 
 /**
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
@@ -455,7 +498,8 @@ input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
-  /* 3 */ }
+  /* 3 */
+}
 
 /**
  * Re-set default cursor for disabled elements.
@@ -463,7 +507,8 @@ input[type="submit"] {
 /* line 342, ../sass/base/_normalize.scss */
 button[disabled],
 html input[disabled] {
-  cursor: default; }
+  cursor: default;
+}
 
 /**
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
@@ -475,7 +520,8 @@ input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
@@ -489,7 +535,8 @@ input[type="search"] {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-  box-sizing: content-box; }
+  box-sizing: content-box;
+}
 
 /**
  * Remove inner padding and search cancel button in Safari 5 and Chrome
@@ -498,7 +545,8 @@ input[type="search"] {
 /* line 376, ../sass/base/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 /**
  * Remove inner padding and border in Firefox 4+.
@@ -507,7 +555,8 @@ input[type="search"]::-webkit-search-decoration {
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /**
  * 1. Remove default vertical scrollbar in IE 8/9.
@@ -518,7 +567,8 @@ textarea {
   overflow: auto;
   /* 1 */
   vertical-align: top;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* ==========================================================================
    Tables
@@ -529,7 +579,8 @@ textarea {
 /* line 408, ../sass/base/_normalize.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 /**
  * Jasonco.de styling based off of Jonathan Path's SASS-SMACSS repository
@@ -543,11 +594,13 @@ body {
   font-family: Arial, sans-serif;
   font-weight: 300;
   font-size: 1em;
-  line-height: normal; }
+  line-height: normal;
+}
 
 /* line 17, ../sass/base/_base.scss */
 h1, h2 {
-  font-family: "Exo 2", Arial, sans-serif; }
+  font-family: "Exo 2", Arial, sans-serif;
+}
 
 /* line 21, ../sass/base/_base.scss */
 a {
@@ -557,10 +610,12 @@ a {
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-  /* line 26, ../sass/base/_base.scss */
-  a:hover {
-    color: #1894c4; }
+  transition: all 0.3s ease-in-out;
+}
+/* line 26, ../sass/base/_base.scss */
+a:hover {
+  color: #1894c4;
+}
 
 /* Fonts */
 /* =======================
@@ -570,19 +625,22 @@ a {
   font-family: 'Exo 2';
   font-style: normal;
   font-weight: 300;
-  src: local("Exo 2 Light"), local("Exo2-Light"), url(http://themes.googleusercontent.com/static/fonts/exo2/v1/JWvvdsUbb528VH-BDTzpW_esZW2xOQ-xsNqO47m55DA.woff) format("woff"); }
+  src: local("Exo 2 Light"), local("Exo2-Light"), url(http://themes.googleusercontent.com/static/fonts/exo2/v1/JWvvdsUbb528VH-BDTzpW_esZW2xOQ-xsNqO47m55DA.woff) format("woff");
+}
 
 @font-face {
   font-family: 'Exo 2';
   font-style: normal;
   font-weight: 500;
-  src: local("Exo 2 Medium"), local("Exo2-Medium"), url(http://themes.googleusercontent.com/static/fonts/exo2/v1/SJSKlaAoPzG8E6EMHXZfevesZW2xOQ-xsNqO47m55DA.woff) format("woff"); }
+  src: local("Exo 2 Medium"), local("Exo2-Medium"), url(http://themes.googleusercontent.com/static/fonts/exo2/v1/SJSKlaAoPzG8E6EMHXZfevesZW2xOQ-xsNqO47m55DA.woff) format("woff");
+}
 
 @font-face {
   font-family: 'Exo 2';
   font-style: normal;
   font-weight: 700;
-  src: local("Exo 2 Bold"), local("Exo2-Bold"), url(http://themes.googleusercontent.com/static/fonts/exo2/v1/RZBBdEhQV3g9mUXUAU9PpvesZW2xOQ-xsNqO47m55DA.woff) format("woff"); }
+  src: local("Exo 2 Bold"), local("Exo2-Bold"), url(http://themes.googleusercontent.com/static/fonts/exo2/v1/RZBBdEhQV3g9mUXUAU9PpvesZW2xOQ-xsNqO47m55DA.woff) format("woff");
+}
 
 /* Layout */
 /* =======================
