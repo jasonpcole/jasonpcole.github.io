@@ -1,0 +1,29 @@
+/**
+ * Jasonco.de styling based off of Jonathan Path's SASS-SMACSS repository
+ * https://github.com/jonathanpath/SASS-SMACSS
+*/
+
+/* ===========================
+   BASE
+   =========================== */
+
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: normal;
+}
+
+@include headings() {
+    font-family: $font1;
+}
+
+a {
+    color: $color1;
+    text-decoration: underline;
+    @include transition();
+
+    &:hover {
+       color: $color2;
+    }
+}
