@@ -6,7 +6,7 @@ jpcSite.config = {
 	scroll: function() {
 		var x, y;
 	},
-	title: "";
+	title: ""
 };
 
 var config = jpcSite.config;
@@ -15,7 +15,7 @@ jpcSite.modules = {
 	navigation: {
 		main: $("nav"),
 		footer: "",
-		project: "";
+		project: ""
 	},
 	work: {
 
