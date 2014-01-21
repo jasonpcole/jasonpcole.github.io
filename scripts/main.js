@@ -2,29 +2,24 @@
 var jpcSite = jpcSite || {};
 
 jpcSite.config = {
-	title: "Jason Cole",
-	subTitle: "This is a subtitle",
-	$headers: {
-		main: $(h1), 
-		sub: $(h2)
+	title: "",
+	subTitle: "",
+	$headerGroup: {
+		main: $("h1"), 
+		sub: $("h2")
 	},
 	mainNav: $(nav)
 };
 
 $.extend(true, jpcSite, {
     modules: {
-        heading: {
-			function() {
-				$(jpcSite.config.$headers.main).hover(
-					function() {
-						$( this ).css( opacity: 0.5 );
-					}, function() {
-				    	$( this ).css( opacity: 1 );
-				  	}
-				);
-			};
+		header: function() {
+			var this.main = jpcSite.config.$headerGroup.main.html(),
+				this.sub  = jpcSite.config.$headerGroup.sub.html(),
+
+				return "headers: " this.main + " " + this.sub;
 		}
-    }
+	}
 });
 
 console.log('test', jpcSite);
