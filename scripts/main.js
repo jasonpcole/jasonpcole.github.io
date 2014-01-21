@@ -2,7 +2,7 @@
 var jpcSite = jpcSite || {};
 
 jpcSite.config = {
-	sections: {[ home, work, projects, blog, contact ]},
+	sections: [ "home", "work", "projects", "blog", "contact" ],
 	scroll: function() {
 		var x, y;
 	},
