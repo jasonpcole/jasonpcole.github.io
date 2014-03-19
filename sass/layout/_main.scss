@@ -4,7 +4,10 @@
 
 main {
 	background: $background-grey;
-  	margin-left: $gw-gutter;
-	width: grid-width(14);
+
+	p {
+	  	margin-left: $gw-gutter;
+		width: grid-width(14);
+	}
 }
 

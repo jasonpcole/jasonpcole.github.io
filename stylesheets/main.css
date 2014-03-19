@@ -709,6 +709,9 @@ nav ul li {
 /* line 5, ../sass/layout/_main.scss */
 main {
   background: #f3f3f3;
+}
+/* line 8, ../sass/layout/_main.scss */
+main p {
   margin-left: 12px;
   width: 996px;
 }
