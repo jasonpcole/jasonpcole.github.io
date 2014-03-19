@@ -4,10 +4,11 @@
 
 footer {
 	background: lighten($black, 40%);
+	padding-bottom: $gw-gutter;	
+	padding-top: $gw-gutter;
 
 	ul {
 		margin-bottom: 0;
-	  	margin-left: $gw-gutter;
 		margin-top: 0;
 		width: grid-width(14);
 

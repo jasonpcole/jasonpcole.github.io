@@ -690,19 +690,20 @@ header hgroup h1, header hgroup h2 {
 /* line 5, ../sass/layout/_footer.scss */
 footer {
   background: #666666;
+  padding-bottom: 12px;
+  padding-top: 12px;
 }
-/* line 8, ../sass/layout/_footer.scss */
+/* line 10, ../sass/layout/_footer.scss */
 footer ul {
   margin-bottom: 0;
-  margin-left: 12px;
   margin-top: 0;
   width: 996px;
 }
-/* line 14, ../sass/layout/_footer.scss */
+/* line 15, ../sass/layout/_footer.scss */
 footer ul li {
   list-style: none;
 }
-/* line 17, ../sass/layout/_footer.scss */
+/* line 18, ../sass/layout/_footer.scss */
 footer ul li a {
   color: white;
 }
