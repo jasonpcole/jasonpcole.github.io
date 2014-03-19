@@ -6,6 +6,14 @@
 // = elements for now
 // -----------------------------
 
-header, nav, main, footer {
+// Elements with no edge-to-edge 
+// background color
+header, nav, footer {
+	@include center-content();
+}
+
+// Elements contained in elements
+// with edge-to-edge background color
+main h3, main p, main blockquote {
 	@include center-content();
 }
