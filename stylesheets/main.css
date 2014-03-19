@@ -611,7 +611,7 @@ body {
 }
 
 /* line 22, ../sass/base/_base.scss */
-h1, h2 {
+h1, h2, h3 {
   font-family: "Exo 2", Arial, sans-serif;
   font-size: 5em;
 }
@@ -623,6 +623,11 @@ h2 {
 }
 
 /* line 32, ../sass/base/_base.scss */
+h3 {
+  font-size: 1.6em;
+}
+
+/* line 36, ../sass/base/_base.scss */
 a {
   color: #df1e28;
   text-decoration: underline;
@@ -632,7 +637,7 @@ a {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 37, ../sass/base/_base.scss */
+/* line 41, ../sass/base/_base.scss */
 a:hover {
   color: #0d7260;
 }
@@ -736,11 +741,12 @@ nav ul a {
 /* line 5, ../sass/layout/_main.scss */
 main {
   background: #f3f3f3;
+  padding-top: 12px;
 }
-/* line 8, ../sass/layout/_main.scss */
+/* line 9, ../sass/layout/_main.scss */
 main h3, main p, main blockquote {
   margin-left: 12px;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
   width: 996px;
 }
 

@@ -4,10 +4,11 @@
 
 main {
 	background: $background-grey;
+	padding-top: $gw-gutter;
 
 	h3, p, blockquote {
 	  	margin-left: $gw-gutter;
-	  	padding-bottom: $gw-gutter;
+	  	margin-bottom: $gw-gutter;
 		width: grid-width(14);
 	}
 
