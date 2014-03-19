@@ -2,4 +2,10 @@
    LAYOUT | GRID
    ======================= */
 
+// = Static layout - center 
+// = elements for now
+// -----------------------------
 
+header, nav, main, footer {
+	@include center-content();
+}

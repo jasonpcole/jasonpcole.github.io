@@ -3,7 +3,8 @@
    ======================= */
 
 main {
-	width: grid-width(15);
+	background: $background-grey;
   	margin-left: $gw-gutter;
+	width: grid-width(14);
 }
 

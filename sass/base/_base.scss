@@ -8,10 +8,14 @@
    =========================== */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: $font2;
     font-weight: 300;
     font-size: 1em;
     line-height: normal;
+}
+
+::selection{
+  background: lighten($color1, 25%);
 }
 
 h1, h2 {

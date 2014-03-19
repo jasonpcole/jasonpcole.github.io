@@ -28,11 +28,6 @@
 /* =======================
    TOOLS | SITE-SETTINGS
    ======================= */
-/* line 37, ../sass/tools/_site-settings.scss */
-::selection {
-  background: #cecece;
-}
-
 /* =======================
    TOOLS | HELPERS
    ======================= */
@@ -603,18 +598,23 @@ table {
    =========================== */
 /* line 10, ../sass/base/_base.scss */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 1em;
   line-height: normal;
 }
 
 /* line 17, ../sass/base/_base.scss */
+::selection {
+  background: #f08d92;
+}
+
+/* line 21, ../sass/base/_base.scss */
 h1, h2 {
   font-family: "Exo 2", Arial, sans-serif;
 }
 
-/* line 21, ../sass/base/_base.scss */
+/* line 25, ../sass/base/_base.scss */
 a {
   color: #df1e28;
   text-decoration: underline;
@@ -624,7 +624,7 @@ a {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 26, ../sass/base/_base.scss */
+/* line 30, ../sass/base/_base.scss */
 a:hover {
   color: #0d7260;
 }
@@ -660,8 +660,8 @@ a:hover {
    ======================= */
 /* line 5, ../sass/layout/_header.scss */
 header {
-  width: 1068px;
   margin-left: 12px;
+  width: 996px;
 }
 /* line 11, ../sass/layout/_header.scss */
 header hgroup h1, header hgroup h2 {
@@ -674,8 +674,8 @@ header hgroup h1, header hgroup h2 {
    ======================= */
 /* line 5, ../sass/layout/_footer.scss */
 footer {
-  width: 852px;
   margin-left: 12px;
+  width: 996px;
 }
 
 /* =======================
@@ -683,8 +683,8 @@ footer {
    ======================= */
 /* line 5, ../sass/layout/_nav.scss */
 nav {
-  width: 1068px;
   margin-left: 12px;
+  width: 996px;
 }
 /* line 9, ../sass/layout/_nav.scss */
 nav ul {
@@ -708,13 +708,20 @@ nav ul li {
    ======================= */
 /* line 5, ../sass/layout/_main.scss */
 main {
-  width: 1068px;
+  background: #f3f3f3;
   margin-left: 12px;
+  width: 996px;
 }
 
 /* =======================
    LAYOUT | GRID
    ======================= */
+/* line 9, ../sass/layout/_grid.scss */
+header, nav, main, footer {
+  display: block;
+  margin: 0 auto;
+}
+
 /* Modules */
 /* =======================
    MODULE | ANIMATIONS
