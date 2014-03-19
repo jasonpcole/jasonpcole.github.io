@@ -8,29 +8,6 @@ header {
   	text-align: center;
 	width: grid-width(14);
 
-	.logo {
-	  	background: url(../images/jpc-logo.svg);
-	  	background-size: 320px 320px;
-		display: block;
-	  	height: 320px;
-		left: 50%;
-		margin-left: -160px;
-		opacity: 0.5;
-		position: absolute;
-	  	text-indent: -9999px;
-	  	top: -55px;
-	  	width: 320px;
-	  	z-index: -1;
-	}
-
-	&:hover {
-		cursor: pointer;
-		
-		.logo {
-			opacity: 1;
-		}
-	}
-
   	hgroup {
 
 		h1, h2 {		

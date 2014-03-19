@@ -678,30 +678,7 @@ header {
   text-align: center;
   width: 996px;
 }
-/* line 11, ../sass/layout/_header.scss */
-header .logo {
-  background: url(../images/jpc-logo.svg);
-  background-size: 320px 320px;
-  display: block;
-  height: 320px;
-  left: 50%;
-  margin-left: -160px;
-  opacity: 0.5;
-  position: absolute;
-  text-indent: -9999px;
-  top: -55px;
-  width: 320px;
-  z-index: -1;
-}
-/* line 26, ../sass/layout/_header.scss */
-header:hover {
-  cursor: pointer;
-}
-/* line 29, ../sass/layout/_header.scss */
-header:hover .logo {
-  opacity: 1;
-}
-/* line 36, ../sass/layout/_header.scss */
+/* line 13, ../sass/layout/_header.scss */
 header hgroup h1, header hgroup h2 {
   display: block;
   margin-left: auto;
@@ -759,15 +736,9 @@ nav ul li {
 }
 /* line 13, ../sass/layout/_nav.scss */
 nav ul a {
-  background: rgba(255, 255, 255, 0.7);
-  -moz-border-radius: 8px;
-  border-radius: 8px;
   display: block;
-  padding: 20px;
-}
-/* line 19, ../sass/layout/_nav.scss */
-nav ul a:hover {
-  background: white;
+  margin: 0 10px;
+  padding: 10px 14px;
 }
 
 /* =======================
