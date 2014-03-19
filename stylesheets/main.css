@@ -617,7 +617,7 @@ h1, h2 {
 
 /* line 26, ../sass/base/_base.scss */
 h2 {
-  color: #8f8f8f;
+  color: #5c5c5c;
   font-size: 2em;
 }
 
@@ -682,6 +682,10 @@ header hgroup h1, header hgroup h2 {
    ======================= */
 /* line 5, ../sass/layout/_footer.scss */
 footer {
+  background: #a6a6a6;
+}
+/* line 8, ../sass/layout/_footer.scss */
+footer p {
   margin-left: 12px;
   width: 996px;
 }
@@ -711,6 +715,10 @@ nav ul li {
   display: inline;
   zoom: 1;
 }
+/* line 13, ../sass/layout/_nav.scss */
+nav ul a {
+  padding: 20px;
+}
 
 /* =======================
    LAYOUT | MAIN
@@ -720,7 +728,7 @@ main {
   background: #f3f3f3;
 }
 /* line 8, ../sass/layout/_main.scss */
-main p {
+main h3, main p, main blockquote {
   margin-left: 12px;
   width: 996px;
 }

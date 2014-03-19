@@ -5,7 +5,7 @@
 main {
 	background: $background-grey;
 
-	p {
+	h3, p, blockquote {
 	  	margin-left: $gw-gutter;
 		width: grid-width(14);
 	}

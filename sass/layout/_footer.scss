@@ -3,7 +3,11 @@
    ======================= */
 
 footer {
-  	margin-left: $gw-gutter;
-	width: grid-width(14);
+	background: darken($background-grey, 30%);
+
+	p {
+	  	margin-left: $gw-gutter;
+		width: grid-width(14);
+	}
 
 }

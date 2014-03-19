@@ -9,5 +9,9 @@ nav {
 
 	ul {
 		@include ul-list-inline();
+
+		a {
+			padding: 20px;
+		}
 	}
 }
