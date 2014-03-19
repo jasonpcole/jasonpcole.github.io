@@ -9,15 +9,25 @@ header {
 	width: grid-width(14);
 
 	.logo {
+	  	background: url(../images/jpc-logo.svg);
+	  	background-size: 320px 320px;
 		display: block;
+	  	height: 320px;
 		left: 50%;
+		margin-left: -160px;
+		opacity: 0.5;
 		position: absolute;
 	  	text-indent: -9999px;
-	  	top: 20px;
-	  	width: 250px;
-	  	height: 250px;
-	  	background: url(../images/jpc-logo.svg);
-	  	background-size: 250px 250px;
+	  	top: -55px;
+	  	width: 320px;p
+	  	z-index: -1;
+	}
+
+	&:hover {
+
+		.logo {
+			opacity: 1;
+		}
 	}
 
   	hgroup {
