@@ -661,13 +661,13 @@ a:hover {
 /* line 5, ../sass/layout/_header.scss */
 header {
   margin-left: 12px;
+  text-align: center;
   width: 996px;
 }
-/* line 11, ../sass/layout/_header.scss */
+/* line 12, ../sass/layout/_header.scss */
 header hgroup h1, header hgroup h2 {
   display: block;
   margin: 0 auto;
-  text-align: center;
 }
 
 /* =======================
@@ -685,9 +685,10 @@ footer {
 /* line 5, ../sass/layout/_nav.scss */
 nav {
   margin-left: 12px;
+  text-align: center;
   width: 996px;
 }
-/* line 9, ../sass/layout/_nav.scss */
+/* line 10, ../sass/layout/_nav.scss */
 nav ul {
   list-style: none;
   margin: 0;
@@ -721,10 +722,9 @@ main p {
    LAYOUT | GRID
    ======================= */
 /* line 9, ../sass/layout/_grid.scss */
-header, nav {
+header, nav, main p, footer {
   display: block;
   margin: 0 auto;
-  text-align: center;
 }
 
 /* Modules */
