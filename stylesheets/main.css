@@ -674,10 +674,23 @@ a:hover {
 /* line 5, ../sass/layout/_header.scss */
 header {
   margin-left: 12px;
+  position: relative;
   text-align: center;
   width: 996px;
 }
-/* line 12, ../sass/layout/_header.scss */
+/* line 11, ../sass/layout/_header.scss */
+header .logo {
+  display: block;
+  left: 50%;
+  position: absolute;
+  text-indent: -9999px;
+  top: 20px;
+  width: 250px;
+  height: 250px;
+  background: url(../images/jpc-logo-compressed.svg);
+  background-size: 250px 250px;
+}
+/* line 25, ../sass/layout/_header.scss */
 header hgroup h1, header hgroup h2 {
   display: block;
   margin-left: auto;
