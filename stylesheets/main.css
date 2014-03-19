@@ -687,7 +687,7 @@ header .logo {
   top: 20px;
   width: 250px;
   height: 250px;
-  background: url(../images/jpc-logo-compressed.svg);
+  background: url(https://github.com/jasonpcole/jasonpcole.github.io/blob/master/images/jpc-logo-compressed.svg);
   background-size: 250px 250px;
 }
 /* line 25, ../sass/layout/_header.scss */
