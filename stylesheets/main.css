@@ -28,6 +28,11 @@
 /* =======================
    TOOLS | SITE-SETTINGS
    ======================= */
+/* line 37, ../sass/tools/_site-settings.scss */
+::selection {
+  background: #cecece;
+}
+
 /* =======================
    TOOLS | HELPERS
    ======================= */
@@ -655,7 +660,7 @@ a:hover {
    ======================= */
 /* line 5, ../sass/layout/_header.scss */
 header {
-  width: 852px;
+  width: 1068px;
   margin-left: 12px;
 }
 /* line 11, ../sass/layout/_header.scss */
@@ -678,7 +683,7 @@ footer {
    ======================= */
 /* line 5, ../sass/layout/_nav.scss */
 nav {
-  width: 852px;
+  width: 1068px;
   margin-left: 12px;
 }
 /* line 9, ../sass/layout/_nav.scss */
@@ -703,7 +708,7 @@ nav ul li {
    ======================= */
 /* line 5, ../sass/layout/_main.scss */
 main {
-  width: 852px;
+  width: 1068px;
   margin-left: 12px;
 }
 

@@ -25,15 +25,18 @@ $color2: $blue;
 // Text
 $color-text-base: rgb(15,15,15);
 
-// link
+// Link
 $color-link: $color2;
-$color-link-hover: lighten($color2, 10%);
+$color-link-hover: lighten($color1, 10%);
 
 // Mixin Placeholder
 $color-mixin-placeholder: darken($color1, 20%);
 
 // Selection
 $color-selection: lighten($color1, 75%);
+::selection{
+	background: lighten($color-text-base, 75%);
+}
 
 // Btn
 $bg-btn: rgba(15,15,15,0.2);

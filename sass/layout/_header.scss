@@ -3,11 +3,11 @@
    ======================= */
 
 header {
-	width: grid-width(12);
+	width: grid-width(15);
   	margin-left: $gw-gutter;
 
   	hgroup {
-  		
+
 		h1, h2 {		
 			@include center-content();
 		}
