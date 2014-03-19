@@ -8,6 +8,14 @@ footer {
 	ul {
 	  	margin-left: $gw-gutter;
 		width: grid-width(14);
+
+		li {
+			list-style: none;
+
+			a {
+				color: $white;
+			}
+		}
 	}
 
 }
