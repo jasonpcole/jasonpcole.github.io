@@ -230,3 +230,9 @@ $prefix-for-spec:      true !default;
     }
 }
 
+// = Center content
+// -----------------------------
+@mixin center-content() {
+    display: block;
+    margin: 0 auto;
+}

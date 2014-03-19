@@ -9,13 +9,13 @@ $audio-canvas-video: false; // True | False
 
 // Fonts
 $font1: "Exo 2", Arial, sans-serif;
-$font2: Arial, sans-serif;
+$font2: $helvetica;
 
 // = Colors
 // -----------------------------
 
-$red: #df2e30;
-$blue: #1894c4;
+$red: rgb(223,30,40);
+$blue: rgb(13,114,96);
 $facebook: #3b5998;
 $twitter: #43bfe1;
 
@@ -23,26 +23,26 @@ $color1: $red;
 $color2: $blue;
 
 // Text
-$color-text-base: #212121;
+$color-text-base: rgb(15,15,15);
 
 // link
-$color-link: $color1;
-$color-link-hover: darken($color1, 10%);
+$color-link: $color2;
+$color-link-hover: lighten($color2, 10%);
 
 // Mixin Placeholder
-$color-mixin-placeholder: #cdcdcd;
+$color-mixin-placeholder: darken($color1, 20%);
 
 // Selection
-$color-selection: $color1;
+$color-selection: lighten($color1, 75%);
 
 // Btn
-$bg-btn: #555;
+$bg-btn: rgba(15,15,15,0.2);
 $bg-btn-hover: darken($bg-btn, 10%);
-$clr-btn: #212121;
+$clr-btn: rgba(15,15,15,0.1);;
 $clr-btn-hover: darken($clr-btn, 10%);
 
 // = Grid
 // -----------------------------
 
-// Max width wrapper
-$wrapper-width: pxtoem(1140, 16);
+$gw-column: 60px;	// Column Width
+$gw-gutter: 12px;	// Gutter Width

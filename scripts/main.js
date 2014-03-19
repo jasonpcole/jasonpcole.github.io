@@ -14,7 +14,7 @@ var config = jpcSite.config;
 jpcSite.modules = {
 	navigation: {
 		main: $("nav"),
-		footer: "",
+		footer: $("footer"),
 		project: ""
 	},
 	work: {

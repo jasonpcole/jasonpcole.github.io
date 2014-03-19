@@ -611,7 +611,7 @@ h1, h2 {
 
 /* line 21, ../sass/base/_base.scss */
 a {
-  color: #df2e30;
+  color: #df1e28;
   text-decoration: underline;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -621,7 +621,7 @@ a {
 }
 /* line 26, ../sass/base/_base.scss */
 a:hover {
-  color: #1894c4;
+  color: #0d7260;
 }
 
 /* Fonts */
@@ -653,15 +653,60 @@ a:hover {
 /* =======================
    LAYOUT | HEADER
    ======================= */
+/* line 5, ../sass/layout/_header.scss */
+header {
+  width: 852px;
+  margin-left: 12px;
+}
+/* line 11, ../sass/layout/_header.scss */
+header hgroup h1, header hgroup h2 {
+  display: block;
+  margin: 0 auto;
+}
+
 /* =======================
    LAYOUT | FOOTER
    ======================= */
+/* line 5, ../sass/layout/_footer.scss */
+footer {
+  width: 852px;
+  margin-left: 12px;
+}
+
 /* =======================
    LAYOUT | NAV
    ======================= */
+/* line 5, ../sass/layout/_nav.scss */
+nav {
+  width: 852px;
+  margin-left: 12px;
+}
+/* line 9, ../sass/layout/_nav.scss */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 228, ../sass/tools/_mixins.scss */
+nav ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 18, ../sass/tools/_mixins.scss */
+.lt-ie8 nav ul li {
+  display: inline;
+  zoom: 1;
+}
+
 /* =======================
    LAYOUT | MAIN
    ======================= */
+/* line 5, ../sass/layout/_main.scss */
+main {
+  width: 852px;
+  margin-left: 12px;
+}
+
 /* =======================
    LAYOUT | GRID
    ======================= */

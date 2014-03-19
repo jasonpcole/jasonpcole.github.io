@@ -2,3 +2,11 @@
    LAYOUT | NAV
    ======================= */
 
+nav {
+	width: grid-width(12);
+  	margin-left: $gw-gutter;
+
+	ul {
+		@include ul-list-inline();
+	}
+}

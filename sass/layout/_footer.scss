@@ -2,3 +2,8 @@
    LAYOUT | FOOTER
    ======================= */
 
+footer {
+	width: grid-width(12);
+  	margin-left: $gw-gutter;
+
+}
