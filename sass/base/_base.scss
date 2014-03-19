@@ -20,6 +20,12 @@ body {
 
 h1, h2 {
     font-family: $font1;
+    font-size: 5em;
+}
+
+h2 {
+  color: lighten($color-text-base, 50%);
+  font-size: 2em;
 }
 
 a {
