@@ -24,7 +24,8 @@ header {
 	}
 
 	&:hover {
-
+		cursor: pointer;
+		
 		.logo {
 			opacity: 1;
 		}

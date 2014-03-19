@@ -11,8 +11,14 @@ nav {
 		@include ul-list-inline();
 
 		a {
+			background: rgba(255,255,255,0.7);
+			@include border-radius(8px);
 			display: block;
 			padding: 20px;
+
+			&:hover {
+				background: rgb(255,255,255);
+			}
 		}
 	}
 }
