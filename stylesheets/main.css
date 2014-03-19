@@ -598,30 +598,31 @@ table {
    =========================== */
 /* line 10, ../sass/base/_base.scss */
 body {
+  background: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 1em;
   line-height: normal;
 }
 
-/* line 17, ../sass/base/_base.scss */
+/* line 18, ../sass/base/_base.scss */
 ::selection {
   background: #f08d92;
 }
 
-/* line 21, ../sass/base/_base.scss */
+/* line 22, ../sass/base/_base.scss */
 h1, h2 {
   font-family: "Exo 2", Arial, sans-serif;
   font-size: 5em;
 }
 
-/* line 26, ../sass/base/_base.scss */
+/* line 27, ../sass/base/_base.scss */
 h2 {
   color: #5c5c5c;
   font-size: 2em;
 }
 
-/* line 31, ../sass/base/_base.scss */
+/* line 32, ../sass/base/_base.scss */
 a {
   color: #df1e28;
   text-decoration: underline;
@@ -631,7 +632,7 @@ a {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 36, ../sass/base/_base.scss */
+/* line 37, ../sass/base/_base.scss */
 a:hover {
   color: #0d7260;
 }
@@ -682,10 +683,10 @@ header hgroup h1, header hgroup h2 {
    ======================= */
 /* line 5, ../sass/layout/_footer.scss */
 footer {
-  background: #a6a6a6;
+  background: #666666;
 }
 /* line 8, ../sass/layout/_footer.scss */
-footer p {
+footer ul {
   margin-left: 12px;
   width: 996px;
 }
@@ -737,7 +738,7 @@ main h3, main p, main blockquote {
    LAYOUT | GRID
    ======================= */
 /* line 9, ../sass/layout/_grid.scss */
-header, nav, main p, footer {
+header, nav, main, footer {
   display: block;
   margin: 0 auto;
 }

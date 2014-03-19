@@ -6,6 +6,6 @@
 // = elements for now
 // -----------------------------
 
-header, nav, main p, footer {
+header, nav, main, footer {
 	@include center-content();
 }

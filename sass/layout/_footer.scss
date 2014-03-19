@@ -3,9 +3,9 @@
    ======================= */
 
 footer {
-	background: darken($background-grey, 30%);
+	background: lighten($black, 40%);
 
-	p {
+	ul {
 	  	margin-left: $gw-gutter;
 		width: grid-width(14);
 	}
