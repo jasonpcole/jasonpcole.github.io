@@ -667,6 +667,7 @@ header {
 header hgroup h1, header hgroup h2 {
   display: block;
   margin: 0 auto;
+  text-align: center;
 }
 
 /* =======================
@@ -720,9 +721,10 @@ main p {
    LAYOUT | GRID
    ======================= */
 /* line 9, ../sass/layout/_grid.scss */
-header, nav, main p, footer {
+header, nav {
   display: block;
   margin: 0 auto;
+  text-align: center;
 }
 
 /* Modules */
