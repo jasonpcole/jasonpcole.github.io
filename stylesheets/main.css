@@ -720,7 +720,7 @@ main p {
    LAYOUT | GRID
    ======================= */
 /* line 9, ../sass/layout/_grid.scss */
-header, nav, main, footer {
+header, nav, main p, footer {
   display: block;
   margin: 0 auto;
 }
