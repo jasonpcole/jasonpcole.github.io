@@ -6,7 +6,9 @@ footer {
 	background: lighten($black, 40%);
 
 	ul {
+		margin-bottom: 0;
 	  	margin-left: $gw-gutter;
+		margin-top: 0;
 		width: grid-width(14);
 
 		li {

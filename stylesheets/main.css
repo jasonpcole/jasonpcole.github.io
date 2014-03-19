@@ -680,7 +680,8 @@ header {
 /* line 12, ../sass/layout/_header.scss */
 header hgroup h1, header hgroup h2 {
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* =======================
@@ -692,14 +693,16 @@ footer {
 }
 /* line 8, ../sass/layout/_footer.scss */
 footer ul {
+  margin-bottom: 0;
   margin-left: 12px;
+  margin-top: 0;
   width: 996px;
 }
-/* line 12, ../sass/layout/_footer.scss */
+/* line 14, ../sass/layout/_footer.scss */
 footer ul li {
   list-style: none;
 }
-/* line 15, ../sass/layout/_footer.scss */
+/* line 17, ../sass/layout/_footer.scss */
 footer ul li a {
   color: white;
 }
@@ -741,9 +744,10 @@ nav ul a {
 /* line 5, ../sass/layout/_main.scss */
 main {
   background: #f3f3f3;
+  padding-bottom: 12px;
   padding-top: 12px;
 }
-/* line 9, ../sass/layout/_main.scss */
+/* line 10, ../sass/layout/_main.scss */
 main h3, main p, main blockquote {
   margin-left: 12px;
   margin-bottom: 12px;
@@ -754,15 +758,17 @@ main h3, main p, main blockquote {
    LAYOUT | GRID
    ======================= */
 /* line 11, ../sass/layout/_grid.scss */
-header, nav, footer {
+header, nav {
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 17, ../sass/layout/_grid.scss */
-main h3, main p, main blockquote {
+main h3, main p, main blockquote, footer ul {
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Modules */
