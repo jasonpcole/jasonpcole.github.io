@@ -15,11 +15,11 @@ header {
         @include center-content();
 
         @include media($tablet) {
-          @include span-columns(10);
+          @include span-columns(20);
         }
 
         @include media($mobile) {
-          @include span-columns(5);
+          @include span-columns(20);
         }
   		}
 	 }

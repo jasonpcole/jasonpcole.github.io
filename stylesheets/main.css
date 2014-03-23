@@ -779,7 +779,7 @@ header hgroup h1:last-child, header hgroup h2:last-child {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 100%;
+    width: 202.5641%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   header hgroup h1:last-child, header hgroup h2:last-child {
@@ -792,7 +792,7 @@ header hgroup h1:last-child, header hgroup h2:last-child {
     float: left;
     display: block;
     margin-right: 5.26316%;
-    width: 100%;
+    width: 415.78947%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   header hgroup h1:last-child, header hgroup h2:last-child {
@@ -869,121 +869,69 @@ footer:after {
 }
 /* line 11, ../sass/layout/_footer.scss */
 footer ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+/* line 15, ../sass/layout/_footer.scss */
+footer ul li {
+  list-style: none;
   float: left;
   display: block;
   margin-right: 1.26582%;
   width: 29.11392%;
-  margin-bottom: 0;
-  margin-top: 0;
 }
 /* line 40, ../sass/neat/grid/_span-columns.scss */
-footer ul:last-child {
+footer ul li:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 11, ../sass/layout/_footer.scss */
-  footer ul {
+  /* line 15, ../sass/layout/_footer.scss */
+  footer ul li {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 48.71795%;
+    width: 58.97436%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
-  footer ul:last-child {
+  footer ul li:last-child {
     margin-right: 0;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 11, ../sass/layout/_footer.scss */
-  footer ul {
+  /* line 15, ../sass/layout/_footer.scss */
+  footer ul li {
     float: left;
     display: block;
     margin-right: 5.26316%;
-    width: 47.36842%;
+    width: 247.36842%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
-  footer ul:last-child {
+  footer ul li:last-child {
     margin-right: 0;
   }
-}
-/* line 24, ../sass/layout/_footer.scss */
-footer ul li {
-  list-style: none;
 }
 /* line 27, ../sass/layout/_footer.scss */
 footer ul li a {
   color: white;
 }
 /* line 33, ../sass/layout/_footer.scss */
-footer .logo {
-  background: transparent url("http://jasonco.de/images/logo-jasonpaulcole.png") 0 0 no-repeat;
-  display: block;
-  height: 135px;
-  text-indent: -99999px;
-  width: 210px;
-  background-size: 50%;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  float: left;
-  display: block;
-  margin-right: 1.26582%;
-  width: 13.92405%;
-  -webkit-transform: rotate(0.95turn);
-  -moz-transform: rotate(0.95turn);
-  -ms-transform: rotate(0.95turn);
-  -o-transform: rotate(0.95turn);
-  transform: rotate(0.95turn);
-}
-/* line 40, ../sass/neat/grid/_span-columns.scss */
-footer .logo:last-child {
-  margin-right: 0;
-}
-@media screen and (max-width: 768px) {
-  /* line 33, ../sass/layout/_footer.scss */
-  footer .logo {
-    float: left;
-    display: block;
-    margin-right: 2.5641%;
-    width: 12.82051%;
-  }
-  /* line 40, ../sass/neat/grid/_span-columns.scss */
-  footer .logo:last-child {
-    margin-right: 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  /* line 33, ../sass/layout/_footer.scss */
-  footer .logo {
-    float: left;
-    display: block;
-    margin-right: 5.26316%;
-    width: 10.52632%;
-  }
-  /* line 40, ../sass/neat/grid/_span-columns.scss */
-  footer .logo:last-child {
-    margin-right: 0;
-  }
-}
-/* line 51, ../sass/layout/_footer.scss */
 footer p {
   float: left;
   display: block;
   margin-right: 1.26582%;
-  width: 24.05063%;
+  width: 39.24051%;
 }
 /* line 40, ../sass/neat/grid/_span-columns.scss */
 footer p:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 51, ../sass/layout/_footer.scss */
+  /* line 33, ../sass/layout/_footer.scss */
   footer p {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 23.07692%;
+    width: 79.48718%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   footer p:last-child {
@@ -991,12 +939,12 @@ footer p:last-child {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 51, ../sass/layout/_footer.scss */
+  /* line 33, ../sass/layout/_footer.scss */
   footer p {
     float: left;
     display: block;
     margin-right: 5.26316%;
-    width: 21.05263%;
+    width: 247.36842%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   footer p:last-child {
@@ -1061,7 +1009,7 @@ nav ul li:last-child {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 9.23077%;
+    width: 31.28205%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   nav ul li:last-child {
@@ -1074,7 +1022,7 @@ nav ul li:last-child {
     float: left;
     display: block;
     margin-right: 5.26316%;
-    width: 6.84211%;
+    width: 247.36842%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   nav ul li:last-child {
@@ -1132,7 +1080,7 @@ main h3:last-child, main h4:last-child, main p:last-child, main dt:last-child, m
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 100%;
+    width: 202.5641%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   main h3:last-child, main h4:last-child, main p:last-child, main dt:last-child, main dd:last-child {
@@ -1145,7 +1093,7 @@ main h3:last-child, main h4:last-child, main p:last-child, main dt:last-child, m
     float: left;
     display: block;
     margin-right: 5.26316%;
-    width: 100%;
+    width: 415.78947%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   main h3:last-child, main h4:last-child, main p:last-child, main dt:last-child, main dd:last-child {
@@ -1169,7 +1117,7 @@ main li:last-child {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 89.74359%;
+    width: 182.05128%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   main li:last-child {
@@ -1182,7 +1130,7 @@ main li:last-child {
     float: left;
     display: block;
     margin-right: 5.26316%;
-    width: 89.47368%;
+    width: 373.68421%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   main li:last-child {
@@ -1208,7 +1156,7 @@ main blockquote:last-child {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 79.48718%;
+    width: 161.53846%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   main blockquote:last-child {
@@ -1221,7 +1169,7 @@ main blockquote:last-child {
     float: left;
     display: block;
     margin-right: 5.26316%;
-    width: 78.94737%;
+    width: 331.57895%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   main blockquote:last-child {
