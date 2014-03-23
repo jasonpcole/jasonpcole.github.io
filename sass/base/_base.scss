@@ -50,13 +50,13 @@ a {
     margin-left: -210px;
     position: absolute;
     @include transform(rotate(0.45turn));
-    @include animation(0, 3s, alternate, infinite, acrossthetop);
+    @include animation(0, 3s, acrossthetop, alternate, infinite);
     @include keyframe(acrossthetop) {
         0% {
-            left: 100%;
+            left: 0;
         }
         100% {
-            left: 0;
+            left: 100%;
         }
     }
 }
