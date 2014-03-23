@@ -4,9 +4,8 @@
 
 nav {
     @include outer-container();
-  	margin-left: $gw-gutter;
+  	margin-left: $gutter;
   	text-align: center;
-	/*width: grid-width(14);*/
 
 	ul {
 		@include ul-list-inline();

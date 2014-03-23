@@ -237,3 +237,21 @@ $prefix-for-spec:      true !default;
     margin-left: auto;
     margin-right: auto;
 }
+
+// = Background image
+// = replacement
+// -----------------------------
+@mixin background-image-replacement($w, $h, $url) {
+    background: transparent url($url) 0 0 no-repeat;
+    display: block;
+    height: $h;
+    text-indent: -99999px;
+    width: $w;
+}
+
+// = Font size px to rem
+// ----------------------------
+@mixin font-size($size) {
+    font-size: $size; //Fallback in px
+    font-size: calculateRem($size);
+}

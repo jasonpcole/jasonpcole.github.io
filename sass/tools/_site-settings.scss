@@ -43,8 +43,7 @@ $bg-btn-hover: darken($bg-btn, 10%);
 $clr-btn: rgba(15,15,15,0.1);;
 $clr-btn-hover: darken($clr-btn, 10%);
 
-// = Grid
-// -----------------------------
+// = Path var
+// ----------------------------
 
-$gw-column: 60px;	// Column Width
-$gw-gutter: 12px;	// Gutter Width
+$assets_path: "http://jasonco.de";

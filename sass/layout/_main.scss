@@ -5,15 +5,49 @@
 main {
     @include outer-container();
 	background: $background-grey;
-	padding-bottom: $gw-gutter;
-	padding-top: $gw-gutter;
+	padding-bottom: $gutter;
+	padding-top: $gutter;
 
-	h3, p, blockquote {
-        @include span-columns(12);
-	  	margin-left: $gw-gutter;
-	  	margin-bottom: $gw-gutter;
-		/*width: grid-width(14);*/
+	h3, h4, p, dt, dd {
+        @include span-columns(20);
+	  	margin-left: $gutter;
+	  	margin-bottom: $gutter;
+
+        @include media($tablet) {
+          @include span-columns(10);
+        }
+
+        @include media($mobile) {
+          @include span-columns(5);
+        }
 	}
+
+    li {
+        @include span-columns(18);
+
+        @include media($tablet) {
+          @include span-columns(9);
+        }
+
+        @include media($mobile) {
+          @include span-columns(4.5);
+        }
+
+    }
+
+    blockquote {
+        @include span-columns(16);
+        margin-left: $gutter;
+        margin-bottom: $gutter;
+
+        @include media($tablet) {
+          @include span-columns(8);
+        }
+
+        @include media($mobile) {
+          @include span-columns(4);
+        }
+    }
 
 }
 

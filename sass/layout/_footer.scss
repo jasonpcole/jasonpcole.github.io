@@ -5,13 +5,21 @@
 footer {
     @include outer-container();
 	background: lighten($black, 40%);
-	padding-bottom: $gw-gutter;
-	padding-top: $gw-gutter;
+	padding-bottom: $gutter;
+	padding-top: $gutter;
 
 	ul {
-		@include span-columns(3.5);
+		@include span-columns(6);
 		margin-bottom: 0;
 		margin-top: 0;
+
+        @include media($tablet) {
+          @include span-columns(5);
+        }
+
+        @include media($mobile) {
+          @include span-columns(2.5);
+        }
 
 		li {
 			list-style: none;
@@ -23,10 +31,26 @@ footer {
 	}
 
 	.logo {
-		@include span-columns(2);
+		@include span-columns(3);
+
+        @include media($tablet) {
+          @include span-columns(1.5);
+        }
+
+        @include media($mobile) {
+          @include span-columns(.75);
+        }
 	}
 	p {
-		@include span-columns(3);
+		@include span-columns(5);
+
+        @include media($tablet) {
+          @include span-columns(2.5);
+        }
+
+        @include media($mobile) {
+          @include span-columns(1.25);
+        }
 	}
 
 }
