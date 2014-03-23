@@ -50,5 +50,6 @@ a {
     left: 50%;
     margin-left: -210px;
     position: absolute;
-    transform: rotate(0.5turn)
+    @include transform(rotate(0.45turn));
+    @include transition (left 5.0s ease-in 0s);
 }

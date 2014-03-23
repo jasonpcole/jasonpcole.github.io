@@ -660,7 +660,16 @@ a:hover {
   left: 50%;
   margin-left: -210px;
   position: absolute;
-  transform: rotate(0.5turn);
+  -webkit-transform: rotate(0.45turn);
+  -moz-transform: rotate(0.45turn);
+  -ms-transform: rotate(0.45turn);
+  -o-transform: rotate(0.45turn);
+  transform: rotate(0.45turn);
+  -webkit-transition: left 5s ease-in 0s;
+  -moz-transition: left 5s ease-in 0s;
+  -ms-transition: left 5s ease-in 0s;
+  -o-transition: left 5s ease-in 0s;
+  transition: left 5s ease-in 0s;
 }
 
 /* Fonts */
