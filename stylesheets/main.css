@@ -652,105 +652,6 @@ a:hover {
   color: #0d7260;
 }
 
-/* line 47, ../sass/base/_base.scss */
-.logo {
-  background: transparent url("http://jasonco.de/images/logo-jasonpaulcole.png") 0 0 no-repeat;
-  display: block;
-  height: 270px;
-  text-indent: -99999px;
-  width: 420px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.3);
-  margin-left: -210px;
-  position: absolute;
-  -webkit-transform: rotate(0.95turn);
-  -moz-transform: rotate(0.95turn);
-  -ms-transform: rotate(0.95turn);
-  -o-transform: rotate(0.95turn);
-  transform: rotate(0.95turn);
-  -webkit-animation-delay: 0;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-name: acrossthetop;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-iteration-count: infinite;
-  /*-webkit-animation-fill-mode: forwards; this prevents the animation from restarting! */
-  -moz-animation-delay: 0;
-  -moz-animation-duration: 3s;
-  -moz-animation-name: acrossthetop;
-  -moz-animation-direction: alternate;
-  -moz-animation-iteration-count: infinite;
-  /*-moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
-  -o-animation-delay: 0;
-  -o-animation-duration: 3s;
-  -o-animation-name: acrossthetop;
-  -o-animation-direction: alternate;
-  -o-animation-iteration-count: infinite;
-  /*-o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
-  animation-delay: 0;
-  animation-duration: 3s;
-  animation-name: acrossthetop;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  /*animation-fill-mode: forwards; /* this prevents the animation from restarting! */
-}
-
-@-webkit-keyframes acrossthetop {
-  /* line 58, ../sass/base/_base.scss */
-  0% {
-    left: 0;
-    opacity: 0.3;
-  }
-
-  /* line 62, ../sass/base/_base.scss */
-  100% {
-    left: 100%;
-    opacity: 0.8;
-  }
-}
-
-@-moz-keyframes acrossthetop {
-  /* line 58, ../sass/base/_base.scss */
-  0% {
-    left: 0;
-    opacity: 0.3;
-  }
-
-  /* line 62, ../sass/base/_base.scss */
-  100% {
-    left: 100%;
-    opacity: 0.8;
-  }
-}
-
-@-o-keyframes acrossthetop {
-  /* line 58, ../sass/base/_base.scss */
-  0% {
-    left: 0;
-    opacity: 0.3;
-  }
-
-  /* line 62, ../sass/base/_base.scss */
-  100% {
-    left: 100%;
-    opacity: 0.8;
-  }
-}
-
-@keyframes acrossthetop {
-  /* line 58, ../sass/base/_base.scss */
-  0% {
-    left: 0;
-    opacity: 0.3;
-  }
-
-  /* line 62, ../sass/base/_base.scss */
-  100% {
-    left: 100%;
-    opacity: 0.8;
-  }
-}
-
 /* Fonts */
 /* =======================
    FONTS | EXO-2
@@ -787,6 +688,62 @@ header {
   margin-right: auto;
   position: relative;
   text-align: center;
+  @-webkit-keyframes acrossthetop {
+    /* line 38, ../sass/layout/_header.scss */
+    0% {
+      left: 0;
+      opacity: 0;
+    }
+
+    /* line 42, ../sass/layout/_header.scss */
+    100% {
+      left: 100%;
+      opacity: 0.8;
+    }
+}
+
+  @-moz-keyframes acrossthetop {
+    /* line 38, ../sass/layout/_header.scss */
+    0% {
+      left: 0;
+      opacity: 0;
+    }
+
+    /* line 42, ../sass/layout/_header.scss */
+    100% {
+      left: 100%;
+      opacity: 0.8;
+    }
+}
+
+  @-o-keyframes acrossthetop {
+    /* line 38, ../sass/layout/_header.scss */
+    0% {
+      left: 0;
+      opacity: 0;
+    }
+
+    /* line 42, ../sass/layout/_header.scss */
+    100% {
+      left: 100%;
+      opacity: 0.8;
+    }
+}
+
+  @keyframes acrossthetop {
+    /* line 38, ../sass/layout/_header.scss */
+    0% {
+      left: 0;
+      opacity: 0;
+    }
+
+    /* line 42, ../sass/layout/_header.scss */
+    100% {
+      left: 100%;
+      opacity: 0.8;
+    }
+}
+
 }
 /* line 29, ../sass/tools/_mixins.scss */
 .lt-ie8 header {
@@ -841,6 +798,48 @@ header hgroup h1:last-child, header hgroup h2:last-child {
   header hgroup h1:last-child, header hgroup h2:last-child {
     margin-right: 0;
   }
+}
+/* line 27, ../sass/layout/_header.scss */
+header .logo {
+  background: transparent url("http://jasonco.de/images/logo-jasonpaulcole.png") 0 0 no-repeat;
+  display: block;
+  height: 270px;
+  text-indent: -99999px;
+  width: 420px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-left: -210px;
+  position: absolute;
+  -webkit-transform: rotate(0.95turn);
+  -moz-transform: rotate(0.95turn);
+  -ms-transform: rotate(0.95turn);
+  -o-transform: rotate(0.95turn);
+  transform: rotate(0.95turn);
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: acrossthetop;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+  /*-webkit-animation-fill-mode: forwards; this prevents the animation from restarting! */
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 3s;
+  -moz-animation-name: acrossthetop;
+  -moz-animation-direction: alternate;
+  -moz-animation-iteration-count: infinite;
+  /*-moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+  -o-animation-delay: 0;
+  -o-animation-duration: 3s;
+  -o-animation-name: acrossthetop;
+  -o-animation-direction: alternate;
+  -o-animation-iteration-count: infinite;
+  /*-o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+  animation-delay: 0;
+  animation-duration: 3s;
+  animation-name: acrossthetop;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  /*animation-fill-mode: forwards; /* this prevents the animation from restarting! */
 }
 
 /* =======================
@@ -917,11 +916,25 @@ footer ul li a {
 }
 /* line 33, ../sass/layout/_footer.scss */
 footer .logo {
-  background-size: 10%;
+  background: transparent url("http://jasonco.de/images/logo-jasonpaulcole.png") 0 0 no-repeat;
+  display: block;
+  height: 135px;
+  text-indent: -99999px;
+  width: 210px;
+  background-size: 50%;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
   float: left;
   display: block;
   margin-right: 1.26582%;
   width: 13.92405%;
+  -webkit-transform: rotate(0.95turn);
+  -moz-transform: rotate(0.95turn);
+  -ms-transform: rotate(0.95turn);
+  -o-transform: rotate(0.95turn);
+  transform: rotate(0.95turn);
 }
 /* line 40, ../sass/neat/grid/_span-columns.scss */
 footer .logo:last-child {
@@ -953,7 +966,7 @@ footer .logo:last-child {
     margin-right: 0;
   }
 }
-/* line 45, ../sass/layout/_footer.scss */
+/* line 51, ../sass/layout/_footer.scss */
 footer p {
   float: left;
   display: block;
@@ -965,7 +978,7 @@ footer p:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 45, ../sass/layout/_footer.scss */
+  /* line 51, ../sass/layout/_footer.scss */
   footer p {
     float: left;
     display: block;
@@ -978,7 +991,7 @@ footer p:last-child {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 45, ../sass/layout/_footer.scss */
+  /* line 51, ../sass/layout/_footer.scss */
   footer p {
     float: left;
     display: block;

@@ -31,8 +31,13 @@ footer {
 	}
 
 	.logo {
-		background-size: 10%;
-		@include span-columns(3);
+		@include background-image-replacement(210px, 135px, "#{$assets_path}/images/logo-jasonpaulcole.png");
+      	background-size: 50%;
+      	@include border-radius(8px);
+      	background-color: rgba(0,0,0,0.3);
+      	position: absolute;
+      	@include span-columns(3);
+      	@include transform(rotate(0.95turn));
 
         @include media($tablet) {
           @include span-columns(1.5);
@@ -42,6 +47,7 @@ footer {
           @include span-columns(.75);
         }
 	}
+
 	p {
 		@include span-columns(5);
 
