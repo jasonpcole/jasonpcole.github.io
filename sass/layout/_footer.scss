@@ -9,6 +9,7 @@ footer {
 	padding-top: $gutter;
 
 	ul {
+		@include span-columns(7);
 		margin-bottom: 0;
 		margin-top: 0;
 
@@ -31,10 +32,10 @@ footer {
 	}
 
 	p {
-		@include span-columns(8);
+		@include span-columns(6);
 
         @include media($tablet) {
-          @include span-columns(8);
+          @include span-columns(6);
         }
 
         @include media($mobile) {

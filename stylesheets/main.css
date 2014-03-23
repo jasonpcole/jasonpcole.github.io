@@ -870,10 +870,18 @@ footer:after {
 }
 /* line 11, ../sass/layout/_footer.scss */
 footer ul {
+  float: left;
+  display: block;
+  margin-right: 1.26582%;
+  width: 34.17722%;
   margin-bottom: 0;
   margin-top: 0;
 }
-/* line 15, ../sass/layout/_footer.scss */
+/* line 40, ../sass/neat/grid/_span-columns.scss */
+footer ul:last-child {
+  margin-right: 0;
+}
+/* line 16, ../sass/layout/_footer.scss */
 footer ul li {
   list-style: none;
   float: left;
@@ -886,7 +894,7 @@ footer ul li:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 15, ../sass/layout/_footer.scss */
+  /* line 16, ../sass/layout/_footer.scss */
   footer ul li {
     float: left;
     display: block;
@@ -899,7 +907,7 @@ footer ul li:last-child {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 15, ../sass/layout/_footer.scss */
+  /* line 16, ../sass/layout/_footer.scss */
   footer ul li {
     float: left;
     display: block;
@@ -911,28 +919,28 @@ footer ul li:last-child {
     margin-right: 0;
   }
 }
-/* line 27, ../sass/layout/_footer.scss */
+/* line 28, ../sass/layout/_footer.scss */
 footer ul li a {
   color: white;
 }
-/* line 33, ../sass/layout/_footer.scss */
+/* line 34, ../sass/layout/_footer.scss */
 footer p {
   float: left;
   display: block;
   margin-right: 1.26582%;
-  width: 39.24051%;
+  width: 29.11392%;
 }
 /* line 40, ../sass/neat/grid/_span-columns.scss */
 footer p:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 33, ../sass/layout/_footer.scss */
+  /* line 34, ../sass/layout/_footer.scss */
   footer p {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 79.48718%;
+    width: 58.97436%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   footer p:last-child {
@@ -940,7 +948,7 @@ footer p:last-child {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 33, ../sass/layout/_footer.scss */
+  /* line 34, ../sass/layout/_footer.scss */
   footer p {
     float: left;
     display: block;
