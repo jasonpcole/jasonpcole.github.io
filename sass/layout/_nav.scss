@@ -12,7 +12,7 @@ nav {
 		@include ul-list-inline();
 
         li {
-            @include span-columns(2.4);
+            @include span-columns(2);
         }
 		a {
 			display: block;
