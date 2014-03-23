@@ -3,14 +3,15 @@
    ======================= */
 
 footer {
+    @include outer-container();
 	background: lighten($black, 40%);
-	padding-bottom: $gw-gutter;	
+	padding-bottom: $gw-gutter;
 	padding-top: $gw-gutter;
 
 	ul {
+		@include span-columns(3.5);
 		margin-bottom: 0;
 		margin-top: 0;
-		width: grid-width(14);
 
 		li {
 			list-style: none;
@@ -19,6 +20,13 @@ footer {
 				color: $white;
 			}
 		}
+	}
+
+	.logo {
+		@include span-columns(2);
+	}
+	p {
+		@include span-columns(3);
 	}
 
 }

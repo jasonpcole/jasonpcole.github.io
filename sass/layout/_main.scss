@@ -3,14 +3,16 @@
    ======================= */
 
 main {
+    @include outer-container();
 	background: $background-grey;
 	padding-bottom: $gw-gutter;
 	padding-top: $gw-gutter;
 
 	h3, p, blockquote {
+        @include span-columns(12);
 	  	margin-left: $gw-gutter;
 	  	margin-bottom: $gw-gutter;
-		width: grid-width(14);
+		/*width: grid-width(14);*/
 	}
 
 }

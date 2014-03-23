@@ -3,13 +3,17 @@
    ======================= */
 
 nav {
+    @include outer-container();
   	margin-left: $gw-gutter;
   	text-align: center;
-	width: grid-width(14);
+	/*width: grid-width(14);*/
 
 	ul {
 		@include ul-list-inline();
 
+        li {
+            @include span-columns(2.4);
+        }
 		a {
 			display: block;
 			padding: 20px;

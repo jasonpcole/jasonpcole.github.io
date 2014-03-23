@@ -3,13 +3,15 @@
    ======================= */
 
 header {
+    @include outer-container();
   	margin-left: $gw-gutter;
   	text-align: center;
-	width: grid-width(14);
+	/*width: grid-width(14);*/
 
   	hgroup {
 
-		h1, h2 {		
+		h1, h2 {
+            @include span-columns(12);
 			@include center-content();
 		}
 	}
