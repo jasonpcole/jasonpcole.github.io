@@ -44,5 +44,10 @@ a {
 }
 
 .logo {
-    @include background-image-replacement(500px, 400px, "#{$assets_path}/images/logo-jasonpaulcole.png");
+    @include background-image-replacement(420px, 270px, "#{$assets_path}/images/logo-jasonpaulcole.png");
+    @include border-radius(8px);
+    background-color: rgba(0,0,0,0.3);
+    left: 420px;
+    margin-left: -210px;
+    position: absolute;
 }

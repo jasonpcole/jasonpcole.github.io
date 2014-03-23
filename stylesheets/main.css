@@ -651,9 +651,15 @@ a:hover {
 .logo {
   background: transparent url("http://jasonco.de/images/logo-jasonpaulcole.png") 0 0 no-repeat;
   display: block;
-  height: 400px;
+  height: 270px;
   text-indent: -99999px;
-  width: 500px;
+  width: 420px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 420px;
+  margin-left: -210px;
+  position: absolute;
 }
 
 /* Fonts */
