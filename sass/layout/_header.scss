@@ -5,6 +5,7 @@
 header {
     @include outer-container();
   	margin-left: $gw-gutter;
+  	position: relative;
   	text-align: center;
 	/*width: grid-width(14);*/
 
