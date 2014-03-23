@@ -657,7 +657,7 @@ a:hover {
   -moz-border-radius: 8px;
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 0.3);
-  left: 420px;
+  left: 50%;
   margin-left: -210px;
   position: absolute;
 }
@@ -827,6 +827,7 @@ footer ul li a {
 }
 /* line 33, ../sass/layout/_footer.scss */
 footer .logo {
+  background-size: 10%;
   float: left;
   display: block;
   margin-right: 1.26582%;
@@ -862,7 +863,7 @@ footer .logo:last-child {
     margin-right: 0;
   }
 }
-/* line 44, ../sass/layout/_footer.scss */
+/* line 45, ../sass/layout/_footer.scss */
 footer p {
   float: left;
   display: block;
@@ -874,7 +875,7 @@ footer p:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 44, ../sass/layout/_footer.scss */
+  /* line 45, ../sass/layout/_footer.scss */
   footer p {
     float: left;
     display: block;
@@ -887,7 +888,7 @@ footer p:last-child {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 44, ../sass/layout/_footer.scss */
+  /* line 45, ../sass/layout/_footer.scss */
   footer p {
     float: left;
     display: block;
@@ -951,7 +952,33 @@ nav ul li {
 nav ul li:last-child {
   margin-right: 0;
 }
-/* line 16, ../sass/layout/_nav.scss */
+@media screen and (max-width: 768px) {
+  /* line 13, ../sass/layout/_nav.scss */
+  nav ul li {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 9.23077%;
+  }
+  /* line 40, ../sass/neat/grid/_span-columns.scss */
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 13, ../sass/layout/_nav.scss */
+  nav ul li {
+    float: left;
+    display: block;
+    margin-right: 5.26316%;
+    width: 6.84211%;
+  }
+  /* line 40, ../sass/neat/grid/_span-columns.scss */
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+}
+/* line 24, ../sass/layout/_nav.scss */
 nav ul a {
   display: block;
   margin: 0 10px;

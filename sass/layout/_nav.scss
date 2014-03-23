@@ -12,6 +12,14 @@ nav {
 
         li {
             @include span-columns(3.3);
+
+            @include media($tablet) {
+              @include span-columns(1.15);
+            }
+
+            @include media($mobile) {
+              @include span-columns(.575);
+            }
         }
 		a {
 			display: block;

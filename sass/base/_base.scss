@@ -12,7 +12,7 @@ body {
     font-family: $font2;
     font-weight: 300;
     @include font-size(16px);
-    line-height:normal;
+    line-height: normal;
 }
 
 ::selection{
@@ -47,7 +47,7 @@ a {
     @include background-image-replacement(420px, 270px, "#{$assets_path}/images/logo-jasonpaulcole.png");
     @include border-radius(8px);
     background-color: rgba(0,0,0,0.3);
-    left: 420px;
+    left: 50%;
     margin-left: -210px;
     position: absolute;
 }
