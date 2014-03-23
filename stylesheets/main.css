@@ -609,34 +609,35 @@ body {
   font-size: 16px;
   font-size: calculateRem(16px);
   line-height: normal;
+  overflow: hidden;
 }
 
-/* line 18, ../sass/base/_base.scss */
+/* line 19, ../sass/base/_base.scss */
 ::selection {
   background: #f08d92;
 }
 
-/* line 22, ../sass/base/_base.scss */
+/* line 23, ../sass/base/_base.scss */
 h1, h2, h3 {
   font-family: "Exo 2", Arial, sans-serif;
   font-size: 80px;
   font-size: calculateRem(80px);
 }
 
-/* line 27, ../sass/base/_base.scss */
+/* line 28, ../sass/base/_base.scss */
 h2 {
   color: #5c5c5c;
   font-size: 32px;
   font-size: calculateRem(32px);
 }
 
-/* line 32, ../sass/base/_base.scss */
+/* line 33, ../sass/base/_base.scss */
 h3 {
   font-size: 26px;
   font-size: calculateRem(26px);
 }
 
-/* line 36, ../sass/base/_base.scss */
+/* line 37, ../sass/base/_base.scss */
 a {
   color: #df1e28;
   text-decoration: underline;
@@ -646,12 +647,12 @@ a {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 41, ../sass/base/_base.scss */
+/* line 42, ../sass/base/_base.scss */
 a:hover {
   color: #0d7260;
 }
 
-/* line 46, ../sass/base/_base.scss */
+/* line 47, ../sass/base/_base.scss */
 .logo {
   background: transparent url("http://jasonco.de/images/logo-jasonpaulcole.png") 0 0 no-repeat;
   display: block;
@@ -663,11 +664,11 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.3);
   margin-left: -210px;
   position: absolute;
-  -webkit-transform: rotate(0.45turn);
-  -moz-transform: rotate(0.45turn);
-  -ms-transform: rotate(0.45turn);
-  -o-transform: rotate(0.45turn);
-  transform: rotate(0.45turn);
+  -webkit-transform: rotate(0.95turn);
+  -moz-transform: rotate(0.95turn);
+  -ms-transform: rotate(0.95turn);
+  -o-transform: rotate(0.95turn);
+  transform: rotate(0.95turn);
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 3s;
   -webkit-animation-name: acrossthetop;
@@ -695,50 +696,58 @@ a:hover {
 }
 
 @-webkit-keyframes acrossthetop {
-  /* line 57, ../sass/base/_base.scss */
+  /* line 58, ../sass/base/_base.scss */
   0% {
     left: 0;
+    opacity: 0.3;
   }
 
-  /* line 60, ../sass/base/_base.scss */
+  /* line 62, ../sass/base/_base.scss */
   100% {
     left: 100%;
+    opacity: 0.8;
   }
 }
 
 @-moz-keyframes acrossthetop {
-  /* line 57, ../sass/base/_base.scss */
+  /* line 58, ../sass/base/_base.scss */
   0% {
     left: 0;
+    opacity: 0.3;
   }
 
-  /* line 60, ../sass/base/_base.scss */
+  /* line 62, ../sass/base/_base.scss */
   100% {
     left: 100%;
+    opacity: 0.8;
   }
 }
 
 @-o-keyframes acrossthetop {
-  /* line 57, ../sass/base/_base.scss */
+  /* line 58, ../sass/base/_base.scss */
   0% {
     left: 0;
+    opacity: 0.3;
   }
 
-  /* line 60, ../sass/base/_base.scss */
+  /* line 62, ../sass/base/_base.scss */
   100% {
     left: 100%;
+    opacity: 0.8;
   }
 }
 
 @keyframes acrossthetop {
-  /* line 57, ../sass/base/_base.scss */
+  /* line 58, ../sass/base/_base.scss */
   0% {
     left: 0;
+    opacity: 0.3;
   }
 
-  /* line 60, ../sass/base/_base.scss */
+  /* line 62, ../sass/base/_base.scss */
   100% {
     left: 100%;
+    opacity: 0.8;
   }
 }
 

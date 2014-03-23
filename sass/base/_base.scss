@@ -13,6 +13,7 @@ body {
     font-weight: 300;
     @include font-size(16px);
     line-height: normal;
+    overflow: hidden;
 }
 
 ::selection{
@@ -49,15 +50,17 @@ a {
     background-color: rgba(0,0,0,0.3);
     margin-left: -210px;
     position: absolute;
-    @include transform(rotate(0.45turn));
+    @include transform(rotate(0.95turn));
     @include animation(0, 3s, acrossthetop, alternate, infinite);
 }
 
 @include keyframe(acrossthetop) {
     0% {
         left: 0;
+        opacity: 0.3;
     }
     100% {
         left: 100%;
+        opacity: 0.8;
     }
 }
