@@ -20,6 +20,10 @@
    Thanks to @sutterlity
    https://github.com/sutter/POPY-Starter-integration-web/blob/master/scss/tools/_mixins.scss
    ======================= */
+/*
+    Example usage:
+    @include animation(10s, 5s, changecolour)
+ */
 /* =======================
    TOOLS | FUNCTIONS
 
@@ -657,7 +661,6 @@ a:hover {
   -moz-border-radius: 8px;
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 0.3);
-  left: 50%;
   margin-left: -210px;
   position: absolute;
   -webkit-transform: rotate(0.45turn);
@@ -665,11 +668,78 @@ a:hover {
   -ms-transform: rotate(0.45turn);
   -o-transform: rotate(0.45turn);
   transform: rotate(0.45turn);
-  -webkit-transition: left 5s ease-in 0s;
-  -moz-transition: left 5s ease-in 0s;
-  -ms-transition: left 5s ease-in 0s;
-  -o-transition: left 5s ease-in 0s;
-  transition: left 5s ease-in 0s;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: infinite;
+  -webkit-animation-name: acrossthetop;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0;
+  -moz-animation-duration: infinite;
+  -moz-animation-name: acrossthetop;
+  -moz-animation-direction: alternate;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 0;
+  -o-animation-duration: infinite;
+  -o-animation-name: acrossthetop;
+  -o-animation-direction: alternate;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0;
+  animation-duration: infinite;
+  animation-name: acrossthetop;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  @-webkit-keyframes acrossthetop {
+    /* line 55, ../sass/base/_base.scss */
+    0% {
+      left: 100%;
+    }
+
+    /* line 58, ../sass/base/_base.scss */
+    100% {
+      left: 0;
+    }
+}
+
+  @-moz-keyframes acrossthetop {
+    /* line 55, ../sass/base/_base.scss */
+    0% {
+      left: 100%;
+    }
+
+    /* line 58, ../sass/base/_base.scss */
+    100% {
+      left: 0;
+    }
+}
+
+  @-o-keyframes acrossthetop {
+    /* line 55, ../sass/base/_base.scss */
+    0% {
+      left: 100%;
+    }
+
+    /* line 58, ../sass/base/_base.scss */
+    100% {
+      left: 0;
+    }
+}
+
+  @keyframes acrossthetop {
+    /* line 55, ../sass/base/_base.scss */
+    0% {
+      left: 100%;
+    }
+
+    /* line 58, ../sass/base/_base.scss */
+    100% {
+      left: 0;
+    }
+}
+
 }
 
 /* Fonts */
@@ -1148,9 +1218,6 @@ header, nav {
 }
 
 /* Modules */
-/* =======================
-   MODULE | ANIMATIONS
-   ======================= */
 /* =======================
    MODULE | BTN
    ======================= */

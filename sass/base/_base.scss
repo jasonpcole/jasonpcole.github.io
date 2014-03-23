@@ -47,9 +47,16 @@ a {
     @include background-image-replacement(420px, 270px, "#{$assets_path}/images/logo-jasonpaulcole.png");
     @include border-radius(8px);
     background-color: rgba(0,0,0,0.3);
-    left: 50%;
     margin-left: -210px;
     position: absolute;
     @include transform(rotate(0.45turn));
-    @include transition (left 5.0s ease-in 0s);
+    @include animation(0, infinite, alternate, acrossthetop);
+    @include keyframe(acrossthetop) {
+        0% {
+            left: 100%;
+        }
+        100% {
+            left: 0;
+        }
+    }
 }
