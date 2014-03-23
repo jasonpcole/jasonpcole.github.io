@@ -15,21 +15,21 @@ footer {
 
 		li {
 			list-style: none;
-			@include span-columns(6);
+			@include span-columns(3.5 of 7);
 
 	        @include media($tablet) {
-	          @include span-columns(6);
+	          @include span-columns(3.5 of 7);
 	        }
 
 	        @include media($mobile) {
-	          @include span-columns(12);
+	          @include span-columns(7 of 7);
 	        }
 
 	        &:first-child {
-	          @include span-columns(12);
+	          @include span-columns(7 of 7);
 
 		        @include media($tablet) {
-		          @include span-columns(6);
+		          @include span-columns(7 of 7);
 		        }
 	        }
 

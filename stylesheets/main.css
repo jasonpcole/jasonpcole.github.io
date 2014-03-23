@@ -886,8 +886,8 @@ footer ul li {
   list-style: none;
   float: left;
   display: block;
-  margin-right: 1.26582%;
-  width: 29.11392%;
+  margin-right: 3.7037%;
+  width: 48.14815%;
 }
 /* line 40, ../sass/neat/grid/_span-columns.scss */
 footer ul li:last-child {
@@ -898,8 +898,8 @@ footer ul li:last-child {
   footer ul li {
     float: left;
     display: block;
-    margin-right: 2.5641%;
-    width: 58.97436%;
+    margin-right: 3.7037%;
+    width: 48.14815%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   footer ul li:last-child {
@@ -911,8 +911,8 @@ footer ul li:last-child {
   footer ul li {
     float: left;
     display: block;
-    margin-right: 5.26316%;
-    width: 247.36842%;
+    margin-right: 3.7037%;
+    width: 100%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   footer ul li:last-child {
@@ -923,8 +923,8 @@ footer ul li:last-child {
 footer ul li:first-child {
   float: left;
   display: block;
-  margin-right: 1.26582%;
-  width: 59.49367%;
+  margin-right: 3.7037%;
+  width: 100%;
 }
 /* line 40, ../sass/neat/grid/_span-columns.scss */
 footer ul li:first-child:last-child {
@@ -935,8 +935,8 @@ footer ul li:first-child:last-child {
   footer ul li:first-child {
     float: left;
     display: block;
-    margin-right: 2.5641%;
-    width: 58.97436%;
+    margin-right: 3.7037%;
+    width: 100%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   footer ul li:first-child:last-child {
