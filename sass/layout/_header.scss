@@ -10,8 +10,9 @@ header {
   	hgroup {
 
   		h1, h2 {
+        margin: 0.5em 0;
         @include span-columns(20);
-  			@include center-content();
+        @include center-content();
 
         @include media($tablet) {
           @include span-columns(10);

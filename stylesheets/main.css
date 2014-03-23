@@ -660,6 +660,7 @@ a:hover {
   left: 50%;
   margin-left: -210px;
   position: absolute;
+  transform: rotate(0.5turn);
 }
 
 /* Fonts */
@@ -714,6 +715,7 @@ header:after {
 }
 /* line 12, ../sass/layout/_header.scss */
 header hgroup h1, header hgroup h2 {
+  margin: 0.5em 0;
   float: left;
   display: block;
   margin-right: 1.26582%;
@@ -1131,13 +1133,6 @@ main blockquote:last-child {
    ======================= */
 /* line 11, ../sass/layout/_grid.scss */
 header, nav {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 17, ../sass/layout/_grid.scss */
-main h3, main p, main blockquote, footer ul {
   display: block;
   margin-left: auto;
   margin-right: auto;

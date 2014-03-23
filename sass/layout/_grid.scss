@@ -2,18 +2,12 @@
    LAYOUT | GRID
    ======================= */
 
-// = Static layout - center 
+// = Static layout - center
 // = elements for now
 // -----------------------------
 
-// Elements with no edge-to-edge 
+// Elements with no edge-to-edge
 // background color
 header, nav {
-	@include center-content();
-}
-
-// Elements contained in elements
-// with edge-to-edge background color
-main h3, main p, main blockquote, footer ul {
 	@include center-content();
 }
