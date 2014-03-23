@@ -11,7 +11,7 @@ nav {
 		@include ul-list-inline();
 
         li {
-            @include span-columns(2);
+            @include span-columns(3.3);
         }
 		a {
 			display: block;
