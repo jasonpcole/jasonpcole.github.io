@@ -920,10 +920,34 @@ footer ul li:last-child {
   }
 }
 /* line 28, ../sass/layout/_footer.scss */
+footer ul li:first-child {
+  float: left;
+  display: block;
+  margin-right: 1.26582%;
+  width: 59.49367%;
+}
+/* line 40, ../sass/neat/grid/_span-columns.scss */
+footer ul li:first-child:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  /* line 28, ../sass/layout/_footer.scss */
+  footer ul li:first-child {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 58.97436%;
+  }
+  /* line 40, ../sass/neat/grid/_span-columns.scss */
+  footer ul li:first-child:last-child {
+    margin-right: 0;
+  }
+}
+/* line 36, ../sass/layout/_footer.scss */
 footer ul li a {
   color: white;
 }
-/* line 34, ../sass/layout/_footer.scss */
+/* line 42, ../sass/layout/_footer.scss */
 footer p {
   float: left;
   display: block;
@@ -935,7 +959,7 @@ footer p:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 34, ../sass/layout/_footer.scss */
+  /* line 42, ../sass/layout/_footer.scss */
   footer p {
     float: left;
     display: block;
@@ -948,7 +972,7 @@ footer p:last-child {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 34, ../sass/layout/_footer.scss */
+  /* line 42, ../sass/layout/_footer.scss */
   footer p {
     float: left;
     display: block;

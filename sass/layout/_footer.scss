@@ -25,6 +25,14 @@ footer {
 	          @include span-columns(12);
 	        }
 
+	        &:first-child {
+	          @include span-columns(12);
+
+		        @include media($tablet) {
+		          @include span-columns(6);
+		        }
+	        }
+
 			a {
 				color: $white;
 			}
