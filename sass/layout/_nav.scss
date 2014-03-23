@@ -14,11 +14,11 @@ nav {
             @include span-columns(3.3);
 
             @include media($tablet) {
-              @include span-columns(3.3);
+              @include span-columns(1.6);
             }
 
             @include media($mobile) {
-              @include span-columns(12);
+              @include span-columns(.83);
             }
         }
 		a {

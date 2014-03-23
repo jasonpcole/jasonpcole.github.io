@@ -13,23 +13,31 @@ footer {
 		margin-bottom: 0;
 		margin-top: 0;
 
+        @include media($tablet) {
+          @include span-columns(3.5);
+        }
+
+        @include media($mobile) {
+          @include span-columns(1.7);
+        }
+
 		li {
 			list-style: none;
 			@include span-columns(3.5 of 7);
 
 	        @include media($tablet) {
-	          @include span-columns(3.5 of 7);
+	          @include span-columns(1.7 of 3.5);
 	        }
 
 	        @include media($mobile) {
-	          @include span-columns(7 of 7);
+	          @include span-columns(.85 of 1.7);
 	        }
 
 	        &:first-child {
 	          @include span-columns(7 of 7);
 
 		        @include media($tablet) {
-		          @include span-columns(7 of 7);
+		          @include span-columns(3.5 of 3.5);
 		        }
 	        }
 
@@ -43,11 +51,11 @@ footer {
 		@include span-columns(6);
 
         @include media($tablet) {
-          @include span-columns(6);
+          @include span-columns(3);
         }
 
         @include media($mobile) {
-          @include span-columns(12);
+          @include span-columns(1.5);
         }
 	}
 

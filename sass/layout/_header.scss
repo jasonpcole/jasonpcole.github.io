@@ -3,11 +3,11 @@
    ======================= */
 
 header {
-    @include outer-container();
   	position: relative;
   	text-align: center;
 
   	hgroup {
+      @include outer-container();
 
   		h1, h2 {
         margin: 0.5em 0;
@@ -15,11 +15,11 @@ header {
         @include center-content();
 
         @include media($tablet) {
-          @include span-columns(20);
+          @include span-columns(10);
         }
 
         @include media($mobile) {
-          @include span-columns(20);
+          @include span-columns(5);
         }
   		}
 	 }

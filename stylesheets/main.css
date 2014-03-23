@@ -604,7 +604,7 @@ table {
 /* line 10, ../sass/base/_base.scss */
 body {
   background: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 16px;
   font-size: calculateRem(16px);
@@ -782,23 +782,26 @@ a:hover {
    ======================= */
 /* line 5, ../sass/layout/_header.scss */
 header {
-  max-width: 60.75em;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   text-align: center;
 }
+/* line 9, ../sass/layout/_header.scss */
+header hgroup {
+  max-width: em(972);
+  margin-left: auto;
+  margin-right: auto;
+}
 /* line 29, ../sass/tools/_mixins.scss */
-.lt-ie8 header {
+.lt-ie8 header hgroup {
   zoom: 1;
 }
 /* line 33, ../sass/tools/_mixins.scss */
-header:before, header:after {
+header hgroup:before, header hgroup:after {
   content: "";
   display: table;
 }
 /* line 37, ../sass/tools/_mixins.scss */
-header:after {
+header hgroup:after {
   clear: both;
 }
 /* line 12, ../sass/layout/_header.scss */
@@ -822,7 +825,7 @@ header hgroup h1:last-child, header hgroup h2:last-child {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 202.5641%;
+    width: 100%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   header hgroup h1:last-child, header hgroup h2:last-child {
@@ -835,7 +838,7 @@ header hgroup h1:last-child, header hgroup h2:last-child {
     float: left;
     display: block;
     margin-right: 5.26316%;
-    width: 415.78947%;
+    width: 100%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   header hgroup h1:last-child, header hgroup h2:last-child {
@@ -848,7 +851,7 @@ header hgroup h1:last-child, header hgroup h2:last-child {
    ======================= */
 /* line 5, ../sass/layout/_footer.scss */
 footer {
-  max-width: 60.75em;
+  max-width: em(972);
   margin-left: auto;
   margin-right: auto;
   background: #666666;
@@ -881,7 +884,33 @@ footer ul {
 footer ul:last-child {
   margin-right: 0;
 }
-/* line 16, ../sass/layout/_footer.scss */
+@media screen and (max-width: 768px) {
+  /* line 11, ../sass/layout/_footer.scss */
+  footer ul {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 33.33333%;
+  }
+  /* line 40, ../sass/neat/grid/_span-columns.scss */
+  footer ul:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 11, ../sass/layout/_footer.scss */
+  footer ul {
+    float: left;
+    display: block;
+    margin-right: 5.26316%;
+    width: 30.52632%;
+  }
+  /* line 40, ../sass/neat/grid/_span-columns.scss */
+  footer ul:last-child {
+    margin-right: 0;
+  }
+}
+/* line 24, ../sass/layout/_footer.scss */
 footer ul li {
   list-style: none;
   float: left;
@@ -894,12 +923,12 @@ footer ul li:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 16, ../sass/layout/_footer.scss */
+  /* line 24, ../sass/layout/_footer.scss */
   footer ul li {
     float: left;
     display: block;
-    margin-right: 3.7037%;
-    width: 48.14815%;
+    margin-right: 7.69231%;
+    width: 44.61538%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   footer ul li:last-child {
@@ -907,19 +936,19 @@ footer ul li:last-child {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 16, ../sass/layout/_footer.scss */
+  /* line 24, ../sass/layout/_footer.scss */
   footer ul li {
     float: left;
     display: block;
-    margin-right: 3.7037%;
-    width: 100%;
+    margin-right: 17.24138%;
+    width: 41.37931%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   footer ul li:last-child {
     margin-right: 0;
   }
 }
-/* line 28, ../sass/layout/_footer.scss */
+/* line 36, ../sass/layout/_footer.scss */
 footer ul li:first-child {
   float: left;
   display: block;
@@ -931,11 +960,11 @@ footer ul li:first-child:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 28, ../sass/layout/_footer.scss */
+  /* line 36, ../sass/layout/_footer.scss */
   footer ul li:first-child {
     float: left;
     display: block;
-    margin-right: 3.7037%;
+    margin-right: 7.69231%;
     width: 100%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
@@ -943,11 +972,11 @@ footer ul li:first-child:last-child {
     margin-right: 0;
   }
 }
-/* line 36, ../sass/layout/_footer.scss */
+/* line 44, ../sass/layout/_footer.scss */
 footer ul li a {
   color: white;
 }
-/* line 42, ../sass/layout/_footer.scss */
+/* line 50, ../sass/layout/_footer.scss */
 footer p {
   float: left;
   display: block;
@@ -959,12 +988,12 @@ footer p:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 42, ../sass/layout/_footer.scss */
+  /* line 50, ../sass/layout/_footer.scss */
   footer p {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 58.97436%;
+    width: 28.20513%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   footer p:last-child {
@@ -972,12 +1001,12 @@ footer p:last-child {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 42, ../sass/layout/_footer.scss */
+  /* line 50, ../sass/layout/_footer.scss */
   footer p {
     float: left;
     display: block;
     margin-right: 5.26316%;
-    width: 247.36842%;
+    width: 26.31579%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   footer p:last-child {
@@ -990,7 +1019,7 @@ footer p:last-child {
    ======================= */
 /* line 5, ../sass/layout/_nav.scss */
 nav {
-  max-width: 60.75em;
+  max-width: em(972);
   margin-left: auto;
   margin-right: auto;
   margin-left: 12px;
@@ -1042,7 +1071,7 @@ nav ul li:last-child {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 31.28205%;
+    width: 13.84615%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   nav ul li:last-child {
@@ -1055,7 +1084,7 @@ nav ul li:last-child {
     float: left;
     display: block;
     margin-right: 5.26316%;
-    width: 247.36842%;
+    width: 12.21053%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   nav ul li:last-child {
@@ -1074,7 +1103,7 @@ nav ul a {
    ======================= */
 /* line 5, ../sass/layout/_main.scss */
 main {
-  max-width: 60.75em;
+  max-width: em(972);
   margin-left: auto;
   margin-right: auto;
   background: #f3f3f3;
@@ -1113,7 +1142,7 @@ main h3:last-child, main h4:last-child, main p:last-child, main dt:last-child, m
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 202.5641%;
+    width: 100%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   main h3:last-child, main h4:last-child, main p:last-child, main dt:last-child, main dd:last-child {
@@ -1126,7 +1155,7 @@ main h3:last-child, main h4:last-child, main p:last-child, main dt:last-child, m
     float: left;
     display: block;
     margin-right: 5.26316%;
-    width: 415.78947%;
+    width: 100%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   main h3:last-child, main h4:last-child, main p:last-child, main dt:last-child, main dd:last-child {
@@ -1150,7 +1179,7 @@ main li:last-child {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 182.05128%;
+    width: 89.74359%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   main li:last-child {
@@ -1163,7 +1192,7 @@ main li:last-child {
     float: left;
     display: block;
     margin-right: 5.26316%;
-    width: 373.68421%;
+    width: 89.47368%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   main li:last-child {
@@ -1189,7 +1218,7 @@ main blockquote:last-child {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 161.53846%;
+    width: 79.48718%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   main blockquote:last-child {
@@ -1202,7 +1231,7 @@ main blockquote:last-child {
     float: left;
     display: block;
     margin-right: 5.26316%;
-    width: 331.57895%;
+    width: 78.94737%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   main blockquote:last-child {
