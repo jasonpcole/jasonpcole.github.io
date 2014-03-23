@@ -692,54 +692,54 @@ a:hover {
   animation-direction: alternate;
   animation-iteration-count: infinite;
   /*animation-fill-mode: forwards; /* this prevents the animation from restarting! */
-  @-webkit-keyframes acrossthetop {
-    /* line 55, ../sass/base/_base.scss */
-    0% {
-      left: 0;
-    }
-
-    /* line 58, ../sass/base/_base.scss */
-    100% {
-      left: 100%;
-    }
 }
 
-  @-moz-keyframes acrossthetop {
-    /* line 55, ../sass/base/_base.scss */
-    0% {
-      left: 0;
-    }
+@-webkit-keyframes acrossthetop {
+  /* line 57, ../sass/base/_base.scss */
+  0% {
+    left: 0;
+  }
 
-    /* line 58, ../sass/base/_base.scss */
-    100% {
-      left: 100%;
-    }
+  /* line 60, ../sass/base/_base.scss */
+  100% {
+    left: 100%;
+  }
 }
 
-  @-o-keyframes acrossthetop {
-    /* line 55, ../sass/base/_base.scss */
-    0% {
-      left: 0;
-    }
+@-moz-keyframes acrossthetop {
+  /* line 57, ../sass/base/_base.scss */
+  0% {
+    left: 0;
+  }
 
-    /* line 58, ../sass/base/_base.scss */
-    100% {
-      left: 100%;
-    }
+  /* line 60, ../sass/base/_base.scss */
+  100% {
+    left: 100%;
+  }
 }
 
-  @keyframes acrossthetop {
-    /* line 55, ../sass/base/_base.scss */
-    0% {
-      left: 0;
-    }
+@-o-keyframes acrossthetop {
+  /* line 57, ../sass/base/_base.scss */
+  0% {
+    left: 0;
+  }
 
-    /* line 58, ../sass/base/_base.scss */
-    100% {
-      left: 100%;
-    }
+  /* line 60, ../sass/base/_base.scss */
+  100% {
+    left: 100%;
+  }
 }
 
+@keyframes acrossthetop {
+  /* line 57, ../sass/base/_base.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 60, ../sass/base/_base.scss */
+  100% {
+    left: 100%;
+  }
 }
 
 /* Fonts */
