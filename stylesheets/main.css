@@ -656,13 +656,13 @@ a:hover {
 .logo {
   background: transparent url("http://jasonco.de/images/logo-jasonpaulcole.png") 0 0 no-repeat;
   display: block;
-  height: 270px;
+  height: 240px;
   text-indent: -99999px;
-  width: 420px;
+  width: 384px;
   -moz-border-radius: 8px;
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 0.3);
-  margin-left: -210px;
+  margin-left: -192px;
   position: absolute;
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 3s;
@@ -688,93 +688,94 @@ a:hover {
   animation-direction: alternate;
   animation-iteration-count: infinite;
   /*animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+  z-index: 1;
 }
 
 @-webkit-keyframes acrossthetop {
-  /* line 57, ../sass/base/_base.scss */
+  /* line 58, ../sass/base/_base.scss */
   0% {
     left: 0;
     opacity: 0;
-    transform: scale(0.5, 0.8);
+    transform: scaleY(10%);
   }
 
-  /* line 62, ../sass/base/_base.scss */
+  /* line 63, ../sass/base/_base.scss */
   50% {
     opacity: 0.8;
-    transform: scaleX(1.2);
+    transform: scaleX(1);
   }
 
-  /* line 66, ../sass/base/_base.scss */
+  /* line 67, ../sass/base/_base.scss */
   100% {
     left: 100%;
     opacity: 0;
-    transform: scale(0.5, 0.8);
+    transform: scaleY(10%);
   }
 }
 
 @-moz-keyframes acrossthetop {
-  /* line 57, ../sass/base/_base.scss */
+  /* line 58, ../sass/base/_base.scss */
   0% {
     left: 0;
     opacity: 0;
-    transform: scale(0.5, 0.8);
+    transform: scaleY(10%);
   }
 
-  /* line 62, ../sass/base/_base.scss */
+  /* line 63, ../sass/base/_base.scss */
   50% {
     opacity: 0.8;
-    transform: scaleX(1.2);
+    transform: scaleX(1);
   }
 
-  /* line 66, ../sass/base/_base.scss */
+  /* line 67, ../sass/base/_base.scss */
   100% {
     left: 100%;
     opacity: 0;
-    transform: scale(0.5, 0.8);
+    transform: scaleY(10%);
   }
 }
 
 @-o-keyframes acrossthetop {
-  /* line 57, ../sass/base/_base.scss */
+  /* line 58, ../sass/base/_base.scss */
   0% {
     left: 0;
     opacity: 0;
-    transform: scale(0.5, 0.8);
+    transform: scaleY(10%);
   }
 
-  /* line 62, ../sass/base/_base.scss */
+  /* line 63, ../sass/base/_base.scss */
   50% {
     opacity: 0.8;
-    transform: scaleX(1.2);
+    transform: scaleX(1);
   }
 
-  /* line 66, ../sass/base/_base.scss */
+  /* line 67, ../sass/base/_base.scss */
   100% {
     left: 100%;
     opacity: 0;
-    transform: scale(0.5, 0.8);
+    transform: scaleY(10%);
   }
 }
 
 @keyframes acrossthetop {
-  /* line 57, ../sass/base/_base.scss */
+  /* line 58, ../sass/base/_base.scss */
   0% {
     left: 0;
     opacity: 0;
-    transform: scale(0.5, 0.8);
+    transform: scaleY(10%);
   }
 
-  /* line 62, ../sass/base/_base.scss */
+  /* line 63, ../sass/base/_base.scss */
   50% {
     opacity: 0.8;
-    transform: scaleX(1.2);
+    transform: scaleX(1);
   }
 
-  /* line 66, ../sass/base/_base.scss */
+  /* line 67, ../sass/base/_base.scss */
   100% {
     left: 100%;
     opacity: 0;
-    transform: scale(0.5, 0.8);
+    transform: scaleY(10%);
   }
 }
 
@@ -811,17 +812,119 @@ a:hover {
 header {
   position: relative;
   text-align: center;
+  @-webkit-keyframes fadeinout {
+    /* line 32, ../sass/layout/_header.scss */
+    0% {
+      opacity: 0;
+    }
+
+    /* line 35, ../sass/layout/_header.scss */
+    50% {
+      opacity: 1;
+      z-index: 0;
+    }
+
+    /* line 39, ../sass/layout/_header.scss */
+    100% {
+      opacity: 0;
+      z-index: 2;
+    }
+}
+
+  @-moz-keyframes fadeinout {
+    /* line 32, ../sass/layout/_header.scss */
+    0% {
+      opacity: 0;
+    }
+
+    /* line 35, ../sass/layout/_header.scss */
+    50% {
+      opacity: 1;
+      z-index: 0;
+    }
+
+    /* line 39, ../sass/layout/_header.scss */
+    100% {
+      opacity: 0;
+      z-index: 2;
+    }
+}
+
+  @-o-keyframes fadeinout {
+    /* line 32, ../sass/layout/_header.scss */
+    0% {
+      opacity: 0;
+    }
+
+    /* line 35, ../sass/layout/_header.scss */
+    50% {
+      opacity: 1;
+      z-index: 0;
+    }
+
+    /* line 39, ../sass/layout/_header.scss */
+    100% {
+      opacity: 0;
+      z-index: 2;
+    }
+}
+
+  @keyframes fadeinout {
+    /* line 32, ../sass/layout/_header.scss */
+    0% {
+      opacity: 0;
+    }
+
+    /* line 35, ../sass/layout/_header.scss */
+    50% {
+      opacity: 1;
+      z-index: 0;
+    }
+
+    /* line 39, ../sass/layout/_header.scss */
+    100% {
+      opacity: 0;
+      z-index: 2;
+    }
+}
+
 }
 /* line 9, ../sass/layout/_header.scss */
 header hgroup {
   background: transparent url("http://jasonco.de/images/ghost-joe.png") 0 0 no-repeat;
   display: block;
-  height: 300px;
+  height: 240px;
   text-indent: -99999px;
-  width: 300px;
+  width: 240px;
   max-width: em(972);
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: fadeinout;
+  -webkit-animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+  /*-webkit-animation-fill-mode: forwards; this prevents the animation from restarting! */
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 3s;
+  -moz-animation-name: fadeinout;
+  -moz-animation-direction: normal;
+  -moz-animation-iteration-count: infinite;
+  /*-moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+  -o-animation-delay: 0;
+  -o-animation-duration: 3s;
+  -o-animation-name: fadeinout;
+  -o-animation-direction: normal;
+  -o-animation-iteration-count: infinite;
+  /*-o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+  animation-delay: 0;
+  animation-duration: 3s;
+  animation-name: fadeinout;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  /*animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+  z-index: 2;
   		/*h1, h2 {
         margin: 0.5em 0;
         @include span-columns(20);
