@@ -310,3 +310,9 @@ $prefix-for-spec:      true !default;
     animation-iteration-count: $iteration-count;
    /*animation-fill-mode: forwards; /* this prevents the animation from restarting! */
 }
+
+// = Letterpress text
+// ===================================
+@mixin letterpress($color){
+    text-shadow:1px 1px 2px $color;
+}

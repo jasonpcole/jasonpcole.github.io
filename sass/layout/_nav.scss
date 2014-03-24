@@ -4,30 +4,22 @@
 
 nav {
     @include outer-container();
-  	margin-left: $gutter;
-  	text-align: center;
 
 	ul {
 		@include ul-list-inline();
+    overflow: hidden;
+    margin: 0 !important;
+    padding: .25em 0 .25em $gutter;
 
     li {
         @include span-columns(3.3);
 
-        background: $background-grey;
-        @include border-top-radius(8px);
-
         @include media($tablet) {
-          @include span-columns(1.6);
+          @include span-columns(1.65);
         }
         @include media($mobile) {
-          @include span-columns(.83);
+          @include span-columns(5);
         }
       }
-
-    a {
-			display: block;
-			margin: 0 10px;
-			padding: 10px 14px;
-		}
 	}
 }

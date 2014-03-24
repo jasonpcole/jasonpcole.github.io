@@ -44,29 +44,29 @@ a {
     }
 }
 
-.logo {
-  @include background-image-replacement(384px, 240px, "#{$assets_path}/images/logo-jasonpaulcole.png");
-  @include border-radius(8px);
-  background-color: rgba(0,0,0,0.3);
-  margin-left: -192px;
-  position: absolute;
-  @include animation(0, 3s, acrossthetop, alternate, infinite);
-  z-index: 1;
-}
+.logo { display: none; }
+//   @include background-image-replacement(384px, 240px, "#{$assets_path}/images/logo-jasonpaulcole.png");
+//   @include border-radius(8px);
+//   background-color: rgba(0,0,0,0.3);
+//   margin-left: -192px;
+//   position: absolute;
+//   @include animation(0, 3s, acrossthetop, alternate, infinite);
+//   z-index: 1;
+// }
 
-@include keyframe(acrossthetop) {
-    0% {
-        left: 0;
-        opacity: 0;
-        transform: scaleY(10%);
-    }
-    50% {
-      opacity: 0.8;
-      transform: scaleX(1);
-    }
-    100% {
-        left: 100%;
-        opacity: 0;
-        transform: scaleY(10%);
-    }
-}
+// @include keyframe(acrossthetop) {
+//     0% {
+//         left: 0;
+//         opacity: 0;
+//         transform: scaleY(10%);
+//     }
+//     50% {
+//       opacity: 0.9;
+//       transform: scaleX(1);
+//     }
+//     100% {
+//         left: 100%;
+//         opacity: 0;
+//         transform: scaleY(10%);
+//     }
+// }

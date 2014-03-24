@@ -3,29 +3,29 @@
    ======================= */
 
 header {
+    background: url("#{$assets_path}/images/ghost-joe.png") 46% 0 no-repeat;
+    height: 240px;
   	position: relative;
   	text-align: center;
 
   	hgroup {
-      @include background-image-replacement(240px, 240px, "#{$assets_path}/images/ghost-joe.png");
       @include outer-container();
-      position: relative;
-      @include animation(0, 3s, fadeinout, normal, infinite);
-      z-index: 2;
 
-  		/*h1, h2 {
-        margin: 0.5em 0;
-        @include span-columns(20);
-        @include center-content();
+  		h1, h2 {
+        line-height: .75em;
+        margin: 0.3em 0;
+        @include span-columns(18);
+        @include shift(1);
 
         @include media($tablet) {
-          @include span-columns(10);
+          @include span-columns(9);
+          @include shift(.5);
         }
 
         @include media($mobile) {
           @include span-columns(5);
         }
-  		}*/
+  		}
 	 }
 
   @include keyframe(fadeinout) {

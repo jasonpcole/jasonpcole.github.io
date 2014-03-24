@@ -29,7 +29,7 @@ $color-text-base: rgb(15,15,15);
 
 // Link
 $color-link: $color2;
-$color-link-hover: lighten($color2, 10%);
+$color-link-hover: darken($color2, 10%);
 
 // Mixin Placeholder
 $color-mixin-placeholder: darken($color2, 20%);
@@ -40,7 +40,7 @@ $background-grey: rgb(243,243,243);
 // Btn
 $bg-btn: rgba(15,15,15,0.2);
 $bg-btn-hover: darken($bg-btn, 10%);
-$clr-btn: rgba(15,15,15,0.1);;
+$clr-btn: rgba(15,15,15,0.1);
 $clr-btn-hover: darken($clr-btn, 10%);
 
 // = Path var

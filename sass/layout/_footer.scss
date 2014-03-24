@@ -4,59 +4,78 @@
 
 footer {
     @include outer-container();
-	background: lighten($black, 40%);
+    background-color: lighten($black, 40%);
+    border-top: .2em solid lighten($black, 20%);
 	padding-bottom: $gutter;
 	padding-top: $gutter;
 
 	ul {
-		@include span-columns(7);
-		margin-bottom: 0;
-		margin-top: 0;
+        max-height: 200px;
+        overflow: hidden;
+		margin: 0;
+
+        @include span-columns(8);
 
         @include media($tablet) {
-          @include span-columns(3.5);
+            @include span-columns(8);
+            @include shift(1);
         }
-
         @include media($mobile) {
-          @include span-columns(1.7);
+            @include span-columns(4);
+            @include shift(.5);
         }
 
-		li {
-			list-style: none;
-			@include span-columns(3.5 of 7);
+        li {
+            @include span-columns(8 of 8);
 
-	        @include media($tablet) {
-	          @include span-columns(1.7 of 3.5);
-	        }
+            @include media($tablet) {
+                @include span-columns(8 of 8);
+            }
+            @include media($mobile) {
+                @include span-columns(4 of 4);
+            }
+        }
 
-	        @include media($mobile) {
-	          @include span-columns(.85 of 1.7);
-	        }
+        &:first-child {
+            max-height: auto !important;
+            @include span-columns(6);
 
-	        &:first-child {
-	          @include span-columns(7 of 7);
+            @include media($tablet) {
+                @include span-columns(8);
+                @include shift(1);
+            }
+            @include media($mobile) {
+                @include span-columns(4);
+                @include shift(.5);
+            }
 
-		        @include media($tablet) {
-		          @include span-columns(3.5 of 3.5);
-		        }
-	        }
+            li {
+                @include span-columns(2 of 6);
 
-			a {
-				color: $white;
-			}
-		}
+                @include media($tablet) {
+                  @include span-columns(1.3 of 8);
+                }
+                @include media($mobile) {
+                  @include span-columns(.65 of 4);
+                }
+            }
+        }
 	}
 
-	p {
+	.about {
+        max-height: 120px;
+        overflow: hidden;
+
 		@include span-columns(6);
 
         @include media($tablet) {
-          @include span-columns(3);
+            @include span-columns(8);
+            @include shift(1);
         }
-
         @include media($mobile) {
-          @include span-columns(1.5);
+            @include span-columns(4);
+            @include shift(.5);
         }
-	}
+    }
 
 }

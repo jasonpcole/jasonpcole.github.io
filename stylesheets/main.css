@@ -654,129 +654,7 @@ a:hover {
 
 /* line 47, ../sass/base/_base.scss */
 .logo {
-  background: transparent url("http://jasonco.de/images/logo-jasonpaulcole.png") 0 0 no-repeat;
-  display: block;
-  height: 240px;
-  text-indent: -99999px;
-  width: 384px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.3);
-  margin-left: -192px;
-  position: absolute;
-  -webkit-animation-delay: 0;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-name: acrossthetop;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-iteration-count: infinite;
-  /*-webkit-animation-fill-mode: forwards; this prevents the animation from restarting! */
-  -moz-animation-delay: 0;
-  -moz-animation-duration: 3s;
-  -moz-animation-name: acrossthetop;
-  -moz-animation-direction: alternate;
-  -moz-animation-iteration-count: infinite;
-  /*-moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
-  -o-animation-delay: 0;
-  -o-animation-duration: 3s;
-  -o-animation-name: acrossthetop;
-  -o-animation-direction: alternate;
-  -o-animation-iteration-count: infinite;
-  /*-o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
-  animation-delay: 0;
-  animation-duration: 3s;
-  animation-name: acrossthetop;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  /*animation-fill-mode: forwards; /* this prevents the animation from restarting! */
-  z-index: 1;
-}
-
-@-webkit-keyframes acrossthetop {
-  /* line 58, ../sass/base/_base.scss */
-  0% {
-    left: 0;
-    opacity: 0;
-    transform: scaleY(10%);
-  }
-
-  /* line 63, ../sass/base/_base.scss */
-  50% {
-    opacity: 0.8;
-    transform: scaleX(1);
-  }
-
-  /* line 67, ../sass/base/_base.scss */
-  100% {
-    left: 100%;
-    opacity: 0;
-    transform: scaleY(10%);
-  }
-}
-
-@-moz-keyframes acrossthetop {
-  /* line 58, ../sass/base/_base.scss */
-  0% {
-    left: 0;
-    opacity: 0;
-    transform: scaleY(10%);
-  }
-
-  /* line 63, ../sass/base/_base.scss */
-  50% {
-    opacity: 0.8;
-    transform: scaleX(1);
-  }
-
-  /* line 67, ../sass/base/_base.scss */
-  100% {
-    left: 100%;
-    opacity: 0;
-    transform: scaleY(10%);
-  }
-}
-
-@-o-keyframes acrossthetop {
-  /* line 58, ../sass/base/_base.scss */
-  0% {
-    left: 0;
-    opacity: 0;
-    transform: scaleY(10%);
-  }
-
-  /* line 63, ../sass/base/_base.scss */
-  50% {
-    opacity: 0.8;
-    transform: scaleX(1);
-  }
-
-  /* line 67, ../sass/base/_base.scss */
-  100% {
-    left: 100%;
-    opacity: 0;
-    transform: scaleY(10%);
-  }
-}
-
-@keyframes acrossthetop {
-  /* line 58, ../sass/base/_base.scss */
-  0% {
-    left: 0;
-    opacity: 0;
-    transform: scaleY(10%);
-  }
-
-  /* line 63, ../sass/base/_base.scss */
-  50% {
-    opacity: 0.8;
-    transform: scaleX(1);
-  }
-
-  /* line 67, ../sass/base/_base.scss */
-  100% {
-    left: 100%;
-    opacity: 0;
-    transform: scaleY(10%);
-  }
+  display: none;
 }
 
 /* Fonts */
@@ -810,6 +688,8 @@ a:hover {
    ======================= */
 /* line 5, ../sass/layout/_header.scss */
 header {
+  background: url("http://jasonco.de/images/ghost-joe.png") 46% 0 no-repeat;
+  height: 240px;
   position: relative;
   text-align: center;
   @-webkit-keyframes fadeinout {
@@ -889,55 +769,12 @@ header {
 }
 
 }
-/* line 9, ../sass/layout/_header.scss */
+/* line 11, ../sass/layout/_header.scss */
 header hgroup {
-  background: transparent url("http://jasonco.de/images/ghost-joe.png") 0 0 no-repeat;
-  display: block;
-  height: 240px;
-  text-indent: -99999px;
-  width: 240px;
-  max-width: em(972);
+  max-width: 60.75em;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
-  -webkit-animation-delay: 0;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-name: fadeinout;
-  -webkit-animation-direction: normal;
-  -webkit-animation-iteration-count: infinite;
-  /*-webkit-animation-fill-mode: forwards; this prevents the animation from restarting! */
-  -moz-animation-delay: 0;
-  -moz-animation-duration: 3s;
-  -moz-animation-name: fadeinout;
-  -moz-animation-direction: normal;
-  -moz-animation-iteration-count: infinite;
-  /*-moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
-  -o-animation-delay: 0;
-  -o-animation-duration: 3s;
-  -o-animation-name: fadeinout;
-  -o-animation-direction: normal;
-  -o-animation-iteration-count: infinite;
-  /*-o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
-  animation-delay: 0;
-  animation-duration: 3s;
-  animation-name: fadeinout;
-  animation-direction: normal;
-  animation-iteration-count: infinite;
-  /*animation-fill-mode: forwards; /* this prevents the animation from restarting! */
-  z-index: 2;
-  		/*h1, h2 {
-        margin: 0.5em 0;
-        @include span-columns(20);
-        @include center-content();
-
-        @include media($tablet) {
-          @include span-columns(10);
-        }
-
-        @include media($mobile) {
-          @include span-columns(5);
-        }
-  		}*/
+  padding-left: 12px;
 }
 /* line 29, ../sass/tools/_mixins.scss */
 .lt-ie8 header hgroup {
@@ -952,16 +789,59 @@ header hgroup:before, header hgroup:after {
 header hgroup:after {
   clear: both;
 }
+/* line 14, ../sass/layout/_header.scss */
+header hgroup h1, header hgroup h2 {
+  line-height: .75em;
+  margin: 0.3em 0;
+  float: left;
+  display: block;
+  margin-right: 1.26582%;
+  width: 89.87342%;
+  margin-left: 5.06329%;
+}
+/* line 40, ../sass/neat/grid/_span-columns.scss */
+header hgroup h1:last-child, header hgroup h2:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  /* line 14, ../sass/layout/_header.scss */
+  header hgroup h1, header hgroup h2 {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 89.74359%;
+    margin-left: 5.12821%;
+  }
+  /* line 40, ../sass/neat/grid/_span-columns.scss */
+  header hgroup h1:last-child, header hgroup h2:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 14, ../sass/layout/_header.scss */
+  header hgroup h1, header hgroup h2 {
+    float: left;
+    display: block;
+    margin-right: 5.26316%;
+    width: 100%;
+  }
+  /* line 40, ../sass/neat/grid/_span-columns.scss */
+  header hgroup h1:last-child, header hgroup h2:last-child {
+    margin-right: 0;
+  }
+}
 
 /* =======================
    LAYOUT | FOOTER
    ======================= */
 /* line 5, ../sass/layout/_footer.scss */
 footer {
-  max-width: em(972);
+  max-width: 60.75em;
   margin-left: auto;
   margin-right: auto;
-  background: #666666;
+  padding-left: 12px;
+  background-color: #666666;
+  border-top: 0.2em solid #333333;
   padding-bottom: 12px;
   padding-top: 12px;
 }
@@ -978,26 +858,28 @@ footer:before, footer:after {
 footer:after {
   clear: both;
 }
-/* line 11, ../sass/layout/_footer.scss */
+/* line 12, ../sass/layout/_footer.scss */
 footer ul {
+  max-height: 200px;
+  overflow: hidden;
+  margin: 0;
   float: left;
   display: block;
   margin-right: 1.26582%;
-  width: 34.17722%;
-  margin-bottom: 0;
-  margin-top: 0;
+  width: 39.24051%;
 }
 /* line 40, ../sass/neat/grid/_span-columns.scss */
 footer ul:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 11, ../sass/layout/_footer.scss */
+  /* line 12, ../sass/layout/_footer.scss */
   footer ul {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 33.33333%;
+    width: 79.48718%;
+    margin-left: 10.25641%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   footer ul:last-child {
@@ -1005,37 +887,37 @@ footer ul:last-child {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 11, ../sass/layout/_footer.scss */
+  /* line 12, ../sass/layout/_footer.scss */
   footer ul {
     float: left;
     display: block;
     margin-right: 5.26316%;
-    width: 30.52632%;
+    width: 78.94737%;
+    margin-left: 10.52632%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   footer ul:last-child {
     margin-right: 0;
   }
 }
-/* line 24, ../sass/layout/_footer.scss */
+/* line 28, ../sass/layout/_footer.scss */
 footer ul li {
-  list-style: none;
   float: left;
   display: block;
-  margin-right: 3.7037%;
-  width: 48.14815%;
+  margin-right: 3.22581%;
+  width: 100%;
 }
 /* line 40, ../sass/neat/grid/_span-columns.scss */
 footer ul li:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 24, ../sass/layout/_footer.scss */
+  /* line 28, ../sass/layout/_footer.scss */
   footer ul li {
     float: left;
     display: block;
-    margin-right: 7.69231%;
-    width: 44.61538%;
+    margin-right: 3.22581%;
+    width: 100%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   footer ul li:last-child {
@@ -1043,80 +925,133 @@ footer ul li:last-child {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 24, ../sass/layout/_footer.scss */
+  /* line 28, ../sass/layout/_footer.scss */
   footer ul li {
     float: left;
     display: block;
-    margin-right: 17.24138%;
-    width: 41.37931%;
+    margin-right: 6.66667%;
+    width: 100%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   footer ul li:last-child {
     margin-right: 0;
   }
 }
-/* line 36, ../sass/layout/_footer.scss */
-footer ul li:first-child {
-  float: left;
-  display: block;
-  margin-right: 3.7037%;
-  width: 100%;
-}
-/* line 40, ../sass/neat/grid/_span-columns.scss */
-footer ul li:first-child:last-child {
-  margin-right: 0;
-}
-@media screen and (max-width: 768px) {
-  /* line 36, ../sass/layout/_footer.scss */
-  footer ul li:first-child {
-    float: left;
-    display: block;
-    margin-right: 7.69231%;
-    width: 100%;
-  }
-  /* line 40, ../sass/neat/grid/_span-columns.scss */
-  footer ul li:first-child:last-child {
-    margin-right: 0;
-  }
-}
-/* line 44, ../sass/layout/_footer.scss */
-footer ul li a {
-  color: white;
-}
-/* line 50, ../sass/layout/_footer.scss */
-footer p {
+/* line 39, ../sass/layout/_footer.scss */
+footer ul:first-child {
+  max-height: auto !important;
   float: left;
   display: block;
   margin-right: 1.26582%;
   width: 29.11392%;
 }
 /* line 40, ../sass/neat/grid/_span-columns.scss */
-footer p:last-child {
+footer ul:first-child:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 50, ../sass/layout/_footer.scss */
-  footer p {
+  /* line 39, ../sass/layout/_footer.scss */
+  footer ul:first-child {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 28.20513%;
+    width: 79.48718%;
+    margin-left: 10.25641%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
-  footer p:last-child {
+  footer ul:first-child:last-child {
     margin-right: 0;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 50, ../sass/layout/_footer.scss */
-  footer p {
+  /* line 39, ../sass/layout/_footer.scss */
+  footer ul:first-child {
     float: left;
     display: block;
     margin-right: 5.26316%;
-    width: 26.31579%;
+    width: 78.94737%;
+    margin-left: 10.52632%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
-  footer p:last-child {
+  footer ul:first-child:last-child {
+    margin-right: 0;
+  }
+}
+/* line 52, ../sass/layout/_footer.scss */
+footer ul:first-child li {
+  float: left;
+  display: block;
+  margin-right: 4.34783%;
+  width: 30.43478%;
+}
+/* line 40, ../sass/neat/grid/_span-columns.scss */
+footer ul:first-child li:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  /* line 52, ../sass/layout/_footer.scss */
+  footer ul:first-child li {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 13.54839%;
+  }
+  /* line 40, ../sass/neat/grid/_span-columns.scss */
+  footer ul:first-child li:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 52, ../sass/layout/_footer.scss */
+  footer ul:first-child li {
+    float: left;
+    display: block;
+    margin-right: 6.66667%;
+    width: 10.66667%;
+  }
+  /* line 40, ../sass/neat/grid/_span-columns.scss */
+  footer ul:first-child li:last-child {
+    margin-right: 0;
+  }
+}
+/* line 65, ../sass/layout/_footer.scss */
+footer .about {
+  max-height: 120px;
+  overflow: hidden;
+  float: left;
+  display: block;
+  margin-right: 1.26582%;
+  width: 29.11392%;
+}
+/* line 40, ../sass/neat/grid/_span-columns.scss */
+footer .about:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  /* line 65, ../sass/layout/_footer.scss */
+  footer .about {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 79.48718%;
+    margin-left: 10.25641%;
+  }
+  /* line 40, ../sass/neat/grid/_span-columns.scss */
+  footer .about:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 65, ../sass/layout/_footer.scss */
+  footer .about {
+    float: left;
+    display: block;
+    margin-right: 5.26316%;
+    width: 78.94737%;
+    margin-left: 10.52632%;
+  }
+  /* line 40, ../sass/neat/grid/_span-columns.scss */
+  footer .about:last-child {
     margin-right: 0;
   }
 }
@@ -1126,11 +1061,10 @@ footer p:last-child {
    ======================= */
 /* line 5, ../sass/layout/_nav.scss */
 nav {
-  max-width: em(972);
+  max-width: 60.75em;
   margin-left: auto;
   margin-right: auto;
-  margin-left: 12px;
-  text-align: center;
+  padding-left: 12px;
 }
 /* line 29, ../sass/tools/_mixins.scss */
 .lt-ie8 nav {
@@ -1145,11 +1079,14 @@ nav:before, nav:after {
 nav:after {
   clear: both;
 }
-/* line 10, ../sass/layout/_nav.scss */
+/* line 8, ../sass/layout/_nav.scss */
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0.25em 0 0.25em 12px;
 }
 /* line 228, ../sass/tools/_mixins.scss */
 nav ul li {
@@ -1161,29 +1098,24 @@ nav ul li {
   display: inline;
   zoom: 1;
 }
-/* line 13, ../sass/layout/_nav.scss */
+/* line 14, ../sass/layout/_nav.scss */
 nav ul li {
   float: left;
   display: block;
   margin-right: 1.26582%;
   width: 15.44304%;
-  background: #f3f3f3;
-  -moz-border-top-left-radius: 8px;
-  border-top-left-radius: 8px;
-  -moz-border-top-right-radius: 8px;
-  border-top-right-radius: 8px;
 }
 /* line 40, ../sass/neat/grid/_span-columns.scss */
 nav ul li:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 13, ../sass/layout/_nav.scss */
+  /* line 14, ../sass/layout/_nav.scss */
   nav ul li {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 13.84615%;
+    width: 14.35897%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   nav ul li:last-child {
@@ -1191,23 +1123,17 @@ nav ul li:last-child {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 13, ../sass/layout/_nav.scss */
+  /* line 14, ../sass/layout/_nav.scss */
   nav ul li {
     float: left;
     display: block;
     margin-right: 5.26316%;
-    width: 12.21053%;
+    width: 100%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   nav ul li:last-child {
     margin-right: 0;
   }
-}
-/* line 27, ../sass/layout/_nav.scss */
-nav ul a {
-  display: block;
-  margin: 0 10px;
-  padding: 10px 14px;
 }
 
 /* =======================
@@ -1215,9 +1141,10 @@ nav ul a {
    ======================= */
 /* line 5, ../sass/layout/_main.scss */
 main {
-  max-width: em(972);
+  max-width: 60.75em;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 12px;
   background: #f3f3f3;
   padding-bottom: 12px;
   padding-top: 12px;
@@ -1240,9 +1167,8 @@ main h3, main h4, main p, main dt, main dd {
   float: left;
   display: block;
   margin-right: 1.26582%;
-  width: 100%;
-  margin-left: 12px;
-  margin-bottom: 12px;
+  width: 79.74684%;
+  margin-left: 10.12658%;
 }
 /* line 40, ../sass/neat/grid/_span-columns.scss */
 main h3:last-child, main h4:last-child, main p:last-child, main dt:last-child, main dd:last-child {
@@ -1254,7 +1180,7 @@ main h3:last-child, main h4:last-child, main p:last-child, main dt:last-child, m
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 100%;
+    width: 79.48718%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   main h3:last-child, main h4:last-child, main p:last-child, main dt:last-child, main dd:last-child {
@@ -1267,31 +1193,32 @@ main h3:last-child, main h4:last-child, main p:last-child, main dt:last-child, m
     float: left;
     display: block;
     margin-right: 5.26316%;
-    width: 100%;
+    width: 78.94737%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   main h3:last-child, main h4:last-child, main p:last-child, main dt:last-child, main dd:last-child {
     margin-right: 0;
   }
 }
-/* line 24, ../sass/layout/_main.scss */
+/* line 23, ../sass/layout/_main.scss */
 main li {
   float: left;
   display: block;
   margin-right: 1.26582%;
-  width: 89.87342%;
+  width: 74.68354%;
+  margin-left: 12.65823%;
 }
 /* line 40, ../sass/neat/grid/_span-columns.scss */
 main li:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 24, ../sass/layout/_main.scss */
+  /* line 23, ../sass/layout/_main.scss */
   main li {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 89.74359%;
+    width: 74.35897%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   main li:last-child {
@@ -1299,12 +1226,12 @@ main li:last-child {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 24, ../sass/layout/_main.scss */
+  /* line 23, ../sass/layout/_main.scss */
   main li {
     float: left;
     display: block;
     margin-right: 5.26316%;
-    width: 89.47368%;
+    width: 94.73684%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   main li:last-child {
@@ -1316,9 +1243,8 @@ main blockquote {
   float: left;
   display: block;
   margin-right: 1.26582%;
-  width: 79.74684%;
-  margin-left: 12px;
-  margin-bottom: 12px;
+  width: 74.68354%;
+  margin-left: 12.65823%;
 }
 /* line 40, ../sass/neat/grid/_span-columns.scss */
 main blockquote:last-child {
@@ -1330,7 +1256,7 @@ main blockquote:last-child {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 79.48718%;
+    width: 74.35897%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   main blockquote:last-child {
@@ -1343,7 +1269,7 @@ main blockquote:last-child {
     float: left;
     display: block;
     margin-right: 5.26316%;
-    width: 78.94737%;
+    width: 94.73684%;
   }
   /* line 40, ../sass/neat/grid/_span-columns.scss */
   main blockquote:last-child {
@@ -1365,3 +1291,43 @@ header, nav {
 /* =======================
    MODULE | BTN
    ======================= */
+/* line 5, ../sass/modules/_btn.scss */
+.btn {
+  text-decoration: none;
+}
+/* line 8, ../sass/modules/_btn.scss */
+.btn:hover {
+  text-shadow: 1px 1px 2px black;
+}
+
+/* line 18, ../sass/modules/_btn.scss */
+nav li {
+  background: -webkit-linear-gradient( transparent 0, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.4) 40%, transparent 20%);
+  background: linear-gradient( transparent 0, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.4) 40%, transparent 20%);
+  -moz-border-radius: 0.8em;
+  border-radius: 0.8em;
+  background-color: white;
+  background-image: -webkit-gradient(radial, center center, 0, center center, 460, color-stop(0%, white), color-stop(100%, #cccccc));
+  background-image: -webkit-radial-gradient(white, #cccccc);
+  background-image: radial-gradient(  white, #cccccc);
+  border: .3em solid #eee;
+  padding: .25em;
+  text-align: center;
+}
+/* line 26, ../sass/modules/_btn.scss */
+nav li .btn {
+  background: -webkit-linear-gradient( #cccccc 0, rgba(0, 0, 0, 0.1) 40%, transparent 20%, #cccccc 40%);
+  background: linear-gradient( #cccccc 0, rgba(0, 0, 0, 0.1) 40%, transparent 20%, #cccccc 40%);
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  border: 0.175em solid rgba(0, 0, 0, 0.05);
+  color: white;
+  display: block;
+  padding: .15em .1em;
+}
+/* line 35, ../sass/modules/_btn.scss */
+nav li .btn:hover {
+  opacity: 0.6;
+  outline: 0;
+}
