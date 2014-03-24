@@ -614,7 +614,7 @@ body {
 
 /* line 19, ../sass/base/_base.scss */
 ::selection {
-  background: #f08d92;
+  background: #dd97a2;
 }
 
 /* line 23, ../sass/base/_base.scss */
@@ -639,7 +639,7 @@ h3 {
 
 /* line 37, ../sass/base/_base.scss */
 a {
-  color: #df1e28;
+  color: #b93c50;
   text-decoration: underline;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -664,11 +664,6 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.3);
   margin-left: -210px;
   position: absolute;
-  -webkit-transform: rotate(-0.95turn);
-  -moz-transform: rotate(-0.95turn);
-  -ms-transform: rotate(-0.95turn);
-  -o-transform: rotate(-0.95turn);
-  transform: rotate(-0.95turn);
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 3s;
   -webkit-animation-name: acrossthetop;
@@ -696,58 +691,90 @@ a:hover {
 }
 
 @-webkit-keyframes acrossthetop {
-  /* line 58, ../sass/base/_base.scss */
+  /* line 57, ../sass/base/_base.scss */
   0% {
     left: 0;
     opacity: 0;
+    transform: scale(0.5, 0.8);
   }
 
   /* line 62, ../sass/base/_base.scss */
+  50% {
+    opacity: 0.8;
+    transform: scaleX(1.2);
+  }
+
+  /* line 66, ../sass/base/_base.scss */
   100% {
     left: 100%;
-    opacity: 0.8;
+    opacity: 0;
+    transform: scale(0.5, 0.8);
   }
 }
 
 @-moz-keyframes acrossthetop {
-  /* line 58, ../sass/base/_base.scss */
+  /* line 57, ../sass/base/_base.scss */
   0% {
     left: 0;
     opacity: 0;
+    transform: scale(0.5, 0.8);
   }
 
   /* line 62, ../sass/base/_base.scss */
+  50% {
+    opacity: 0.8;
+    transform: scaleX(1.2);
+  }
+
+  /* line 66, ../sass/base/_base.scss */
   100% {
     left: 100%;
-    opacity: 0.8;
+    opacity: 0;
+    transform: scale(0.5, 0.8);
   }
 }
 
 @-o-keyframes acrossthetop {
-  /* line 58, ../sass/base/_base.scss */
+  /* line 57, ../sass/base/_base.scss */
   0% {
     left: 0;
     opacity: 0;
+    transform: scale(0.5, 0.8);
   }
 
   /* line 62, ../sass/base/_base.scss */
+  50% {
+    opacity: 0.8;
+    transform: scaleX(1.2);
+  }
+
+  /* line 66, ../sass/base/_base.scss */
   100% {
     left: 100%;
-    opacity: 0.8;
+    opacity: 0;
+    transform: scale(0.5, 0.8);
   }
 }
 
 @keyframes acrossthetop {
-  /* line 58, ../sass/base/_base.scss */
+  /* line 57, ../sass/base/_base.scss */
   0% {
     left: 0;
     opacity: 0;
+    transform: scale(0.5, 0.8);
   }
 
   /* line 62, ../sass/base/_base.scss */
+  50% {
+    opacity: 0.8;
+    transform: scaleX(1.2);
+  }
+
+  /* line 66, ../sass/base/_base.scss */
   100% {
     left: 100%;
-    opacity: 0.8;
+    opacity: 0;
+    transform: scale(0.5, 0.8);
   }
 }
 
@@ -787,9 +814,27 @@ header {
 }
 /* line 9, ../sass/layout/_header.scss */
 header hgroup {
+  background: transparent url("http://jasonco.de/images/ghost-joe.png") 0 0 no-repeat;
+  display: block;
+  height: 300px;
+  text-indent: -99999px;
+  width: 300px;
   max-width: em(972);
   margin-left: auto;
   margin-right: auto;
+  		/*h1, h2 {
+        margin: 0.5em 0;
+        @include span-columns(20);
+        @include center-content();
+
+        @include media($tablet) {
+          @include span-columns(10);
+        }
+
+        @include media($mobile) {
+          @include span-columns(5);
+        }
+  		}*/
 }
 /* line 29, ../sass/tools/_mixins.scss */
 .lt-ie8 header hgroup {
@@ -803,47 +848,6 @@ header hgroup:before, header hgroup:after {
 /* line 37, ../sass/tools/_mixins.scss */
 header hgroup:after {
   clear: both;
-}
-/* line 12, ../sass/layout/_header.scss */
-header hgroup h1, header hgroup h2 {
-  margin: 0.5em 0;
-  float: left;
-  display: block;
-  margin-right: 1.26582%;
-  width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 40, ../sass/neat/grid/_span-columns.scss */
-header hgroup h1:last-child, header hgroup h2:last-child {
-  margin-right: 0;
-}
-@media screen and (max-width: 768px) {
-  /* line 12, ../sass/layout/_header.scss */
-  header hgroup h1, header hgroup h2 {
-    float: left;
-    display: block;
-    margin-right: 2.5641%;
-    width: 100%;
-  }
-  /* line 40, ../sass/neat/grid/_span-columns.scss */
-  header hgroup h1:last-child, header hgroup h2:last-child {
-    margin-right: 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  /* line 12, ../sass/layout/_header.scss */
-  header hgroup h1, header hgroup h2 {
-    float: left;
-    display: block;
-    margin-right: 5.26316%;
-    width: 100%;
-  }
-  /* line 40, ../sass/neat/grid/_span-columns.scss */
-  header hgroup h1:last-child, header hgroup h2:last-child {
-    margin-right: 0;
-  }
 }
 
 /* =======================
@@ -1060,6 +1064,11 @@ nav ul li {
   display: block;
   margin-right: 1.26582%;
   width: 15.44304%;
+  background: #f3f3f3;
+  -moz-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -moz-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
 }
 /* line 40, ../sass/neat/grid/_span-columns.scss */
 nav ul li:last-child {
@@ -1091,7 +1100,7 @@ nav ul li:last-child {
     margin-right: 0;
   }
 }
-/* line 24, ../sass/layout/_nav.scss */
+/* line 27, ../sass/layout/_nav.scss */
 nav ul a {
   display: block;
   margin: 0 10px;
@@ -1162,7 +1171,7 @@ main h3:last-child, main h4:last-child, main p:last-child, main dt:last-child, m
     margin-right: 0;
   }
 }
-/* line 25, ../sass/layout/_main.scss */
+/* line 24, ../sass/layout/_main.scss */
 main li {
   float: left;
   display: block;
@@ -1174,7 +1183,7 @@ main li:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 25, ../sass/layout/_main.scss */
+  /* line 24, ../sass/layout/_main.scss */
   main li {
     float: left;
     display: block;
@@ -1187,7 +1196,7 @@ main li:last-child {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 25, ../sass/layout/_main.scss */
+  /* line 24, ../sass/layout/_main.scss */
   main li {
     float: left;
     display: block;
@@ -1199,7 +1208,7 @@ main li:last-child {
     margin-right: 0;
   }
 }
-/* line 38, ../sass/layout/_main.scss */
+/* line 36, ../sass/layout/_main.scss */
 main blockquote {
   float: left;
   display: block;
@@ -1213,7 +1222,7 @@ main blockquote:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  /* line 38, ../sass/layout/_main.scss */
+  /* line 36, ../sass/layout/_main.scss */
   main blockquote {
     float: left;
     display: block;
@@ -1226,7 +1235,7 @@ main blockquote:last-child {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 38, ../sass/layout/_main.scss */
+  /* line 36, ../sass/layout/_main.scss */
   main blockquote {
     float: left;
     display: block;

@@ -3,24 +3,23 @@
    ======================= */
 
 main {
-    @include outer-container();
+  @include outer-container();
 	background: $background-grey;
 	padding-bottom: $gutter;
 	padding-top: $gutter;
 
 	h3, h4, p, dt, dd {
-        @include span-columns(20);
+      @include span-columns(20);
 	  	margin-left: $gutter;
 	  	margin-bottom: $gutter;
 
-        @include media($tablet) {
-          @include span-columns(10);
-        }
-
-        @include media($mobile) {
-          @include span-columns(5);
-        }
-	}
+      @include media($tablet) {
+        @include span-columns(10);
+      }
+      @include media($mobile) {
+        @include span-columns(5);
+      }
+  }
 
     li {
         @include span-columns(18);
@@ -28,7 +27,6 @@ main {
         @include media($tablet) {
           @include span-columns(9);
         }
-
         @include media($mobile) {
           @include span-columns(4.5);
         }
@@ -43,11 +41,9 @@ main {
         @include media($tablet) {
           @include span-columns(8);
         }
-
         @include media($mobile) {
           @include span-columns(4);
         }
     }
-
 }
 

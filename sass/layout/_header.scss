@@ -7,9 +7,10 @@ header {
   	text-align: center;
 
   	hgroup {
+      @include background-image-replacement(300px, 300px, "#{$assets_path}/images/ghost-joe.png");
       @include outer-container();
 
-  		h1, h2 {
+  		/*h1, h2 {
         margin: 0.5em 0;
         @include span-columns(20);
         @include center-content();
@@ -21,7 +22,7 @@ header {
         @include media($mobile) {
           @include span-columns(5);
         }
-  		}
+  		}*/
 	 }
 }
 

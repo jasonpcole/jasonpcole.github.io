@@ -10,18 +10,21 @@ nav {
 	ul {
 		@include ul-list-inline();
 
-        li {
-            @include span-columns(3.3);
+    li {
+        @include span-columns(3.3);
 
-            @include media($tablet) {
-              @include span-columns(1.6);
-            }
+        background: $background-grey;
+        @include border-top-radius(8px);
 
-            @include media($mobile) {
-              @include span-columns(.83);
-            }
+        @include media($tablet) {
+          @include span-columns(1.6);
         }
-		a {
+        @include media($mobile) {
+          @include span-columns(.83);
+        }
+      }
+
+    a {
 			display: block;
 			margin: 0 10px;
 			padding: 10px 14px;
