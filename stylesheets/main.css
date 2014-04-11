@@ -774,7 +774,6 @@ header hgroup {
   max-width: 60.75em;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 12px;
 }
 /* line 29, ../sass/tools/_mixins.scss */
 .lt-ie8 header hgroup {
@@ -839,7 +838,6 @@ footer {
   max-width: 60.75em;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 12px;
   background-color: #666666;
   border-top: 0.2em solid #333333;
   padding-bottom: 12px;
@@ -1064,7 +1062,6 @@ nav {
   max-width: 60.75em;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 12px;
 }
 /* line 29, ../sass/tools/_mixins.scss */
 .lt-ie8 nav {
@@ -1144,7 +1141,6 @@ main {
   max-width: 60.75em;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 12px;
   background: #f3f3f3;
   padding-bottom: 12px;
   padding-top: 12px;
@@ -1280,13 +1276,6 @@ main blockquote:last-child {
 /* =======================
    LAYOUT | GRID
    ======================= */
-/* line 11, ../sass/layout/_grid.scss */
-header, nav {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* Modules */
 /* =======================
    MODULE | BTN

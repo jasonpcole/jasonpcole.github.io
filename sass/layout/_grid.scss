@@ -5,9 +5,3 @@
 // = Static layout - center
 // = elements for now
 // -----------------------------
-
-// Elements with no edge-to-edge
-// background color
-header, nav {
-	@include center-content();
-}
