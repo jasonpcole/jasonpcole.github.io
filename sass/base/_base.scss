@@ -1,0 +1,72 @@
+/**
+ * Jasonco.de styling based off of Jonathan Path's SASS-SMACSS repository
+ * https://github.com/jonathanpath/SASS-SMACSS
+*/
+
+/* ===========================
+   BASE
+   =========================== */
+
+body {
+    background: $white;
+    font-family: $font2;
+    font-weight: 300;
+    @include font-size(16px);
+    line-height: normal;
+    overflow: hidden;
+}
+
+::selection{
+  background: lighten($color1, 25%);
+}
+
+h1, h2, h3 {
+    font-family: $font1;
+    @include font-size(80px);
+}
+
+h2 {
+    color: lighten($color-text-base, 30%);
+    @include font-size(32px);
+}
+
+h3 {
+    @include font-size(26px);
+}
+
+a {
+    color: $color1;
+    text-decoration: underline;
+    @include transition();
+
+    &:hover {
+       color: $color2;
+    }
+}
+
+.logo { display: none; }
+//   @include background-image-replacement(384px, 240px, "#{$assets_path}/images/logo-jasonpaulcole.png");
+//   @include border-radius(8px);
+//   background-color: rgba(0,0,0,0.3);
+//   margin-left: -192px;
+//   position: absolute;
+//   @include animation(0, 3s, acrossthetop, alternate, infinite);
+//   z-index: 1;
+// }
+
+// @include keyframe(acrossthetop) {
+//     0% {
+//         left: 0;
+//         opacity: 0;
+//         transform: scaleY(10%);
+//     }
+//     50% {
+//       opacity: 0.9;
+//       transform: scaleX(1);
+//     }
+//     100% {
+//         left: 100%;
+//         opacity: 0;
+//         transform: scaleY(10%);
+//     }
+// }

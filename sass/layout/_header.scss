@@ -1,0 +1,45 @@
+/* =======================
+   LAYOUT | HEADER
+   ======================= */
+
+header {
+    background: url("#{$assets_path}/images/ghost-joe.png") 46% 0 no-repeat;
+    height: 240px;
+  	position: relative;
+  	text-align: center;
+
+  	hgroup {
+      @include outer-container();
+
+  		h1, h2 {
+        line-height: .75em;
+        margin: 0.3em 0;
+        @include span-columns(18);
+        @include shift(1);
+
+        @include media($tablet) {
+          @include span-columns(9);
+          @include shift(.5);
+        }
+
+        @include media($mobile) {
+          @include span-columns(5);
+        }
+  		}
+	 }
+
+  @include keyframe(fadeinout) {
+      0% {
+          opacity: 0;
+      }
+      50% {
+          opacity: 1;
+          z-index: 0;
+      }
+      100% {
+          opacity: 0;
+          z-index: 2;
+      }
+  }
+}
+

@@ -1,0 +1,48 @@
+/* =======================
+   LAYOUT | MAIN
+   ======================= */
+
+main {
+  @include outer-container();
+	background: $background-grey;
+	padding-bottom: $gutter;
+	padding-top: $gutter;
+
+	h3, h4, p, dt, dd {
+      @include span-columns(16);
+      @include shift(2);
+
+      @include media($tablet) {
+        @include span-columns(8);
+      }
+      @include media($mobile) {
+        @include span-columns(4);
+      }
+  }
+
+  li {
+      @include span-columns(15);
+      @include shift(2.5);
+
+      @include media($tablet) {
+        @include span-columns(7.5);
+      }
+      @include media($mobile) {
+        @include span-columns(4.75);
+      }
+
+    }
+
+  blockquote {
+      @include span-columns(15);
+      @include shift(2.5);
+
+        @include media($tablet) {
+          @include span-columns(7.5);
+        }
+        @include media($mobile) {
+          @include span-columns(4.75);
+        }
+    }
+}
+
