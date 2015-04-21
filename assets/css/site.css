@@ -407,6 +407,10 @@ a.list-group-item-danger.active:focus {
 .panel-info .panel-heading {
   border-color: #000;
 }
+/*#intro {
+  background-image: url(../images/intro.jpg);
+  background-size: cover;
+}*/
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 article,
 aside,
